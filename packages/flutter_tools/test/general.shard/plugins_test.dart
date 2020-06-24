@@ -10,15 +10,18 @@ import 'package:file_testing/file_testing.dart';
 import 'package:flutter_tools/src/base/time.dart';
 import 'package:flutter_tools/src/dart/package_map.dart';
 import 'package:flutter_tools/src/features.dart';
+import 'package:flutter_tools/src/globals.dart' as globals;
 import 'package:flutter_tools/src/ios/xcodeproj.dart';
 import 'package:flutter_tools/src/plugins.dart';
 import 'package:flutter_tools/src/project.dart';
 import 'package:flutter_tools/src/version.dart';
 import 'package:meta/meta.dart';
 import 'package:mockito/mockito.dart';
+import 'package:yaml/yaml.dart';
 
 import '../src/common.dart';
 import '../src/context.dart';
+import '../src/pubspec_schema.dart';
 
 void main() {
   group('plugins', () {
@@ -91,8 +94,8 @@ void main() {
       when(linuxProject.managedDirectory).thenReturn(linuxManagedDirectory);
       when(linuxProject.ephemeralDirectory).thenReturn(linuxEphemeralDirectory);
       when(linuxProject.pluginSymlinkDirectory).thenReturn(linuxEphemeralDirectory.childDirectory('.plugin_symlinks'));
-      when(linuxProject.makeFile).thenReturn(linuxManagedDirectory.parent.childFile('Makefile'));
-      when(linuxProject.generatedPluginMakeFile).thenReturn(linuxManagedDirectory.childFile('generated_plugins.mk'));
+      when(linuxProject.cmakeFile).thenReturn(linuxManagedDirectory.parent.childFile('CMakeLists.txt'));
+      when(linuxProject.generatedPluginCmakeFile).thenReturn(linuxManagedDirectory.childFile('generated_plugins.mk'));
       when(linuxProject.existsSync()).thenReturn(false);
 
       when(mockClock.now()).thenAnswer(
@@ -109,16 +112,14 @@ void main() {
           ..writeAsStringSync('apackage:file://${dummyPackageDirectory.path}\n');
     });
 
-    // Makes the dummy package pointed to by packagesFile look like a plugin.
-    void configureDummyPackageAsPlugin() {
-      dummyPackageDirectory.parent.childFile('pubspec.yaml')..createSync(recursive: true)..writeAsStringSync('''
+    const String _pluginYaml = '''
   flutter:
     plugin:
       platforms:
         ios:
-          pluginClass: FLESomePlugin
+          pluginClass: SomePlugin
         macos:
-          pluginClass: FLESomePlugin
+          pluginClass: SomePlugin
         windows:
           pluginClass: SomePlugin
         linux:
@@ -129,7 +130,10 @@ void main() {
         android:
           pluginClass: SomePlugin
           package: AndroidPackage
-  ''');
+  ''';
+    // Makes the dummy package pointed to by packagesFile look like a plugin.
+    void configureDummyPackageAsPlugin() {
+      dummyPackageDirectory.parent.childFile('pubspec.yaml')..createSync(recursive: true)..writeAsStringSync(_pluginYaml);
     }
 
     void createNewJavaPlugin1() {
@@ -914,6 +918,35 @@ flutter:
         FeatureFlags: () => featureFlags,
       });
 
+      testUsingContext('pluginClass: none doesn\'t trigger registrant entry on macOS', () async {
+        when(macosProject.existsSync()).thenReturn(true);
+        when(featureFlags.isMacOSEnabled).thenReturn(true);
+        when(flutterProject.isModule).thenReturn(true);
+        // Create a plugin without a pluginClass.
+        dummyPackageDirectory.parent.childFile('pubspec.yaml')
+          ..createSync(recursive: true)
+          ..writeAsStringSync('''
+flutter:
+  plugin:
+    platforms:
+      macos:
+        pluginClass: none
+        dartPluginClass: SomePlugin
+    ''');
+
+        await injectPlugins(flutterProject, checkProjects: true);
+
+        final File registrantFile = macosProject.managedDirectory.childFile('GeneratedPluginRegistrant.swift');
+
+        expect(registrantFile, exists);
+        expect(registrantFile, isNot(contains('SomePlugin')));
+        expect(registrantFile, isNot(contains('none')));
+      }, overrides: <Type, Generator>{
+        FileSystem: () => fs,
+        ProcessManager: () => FakeProcessManager.any(),
+        FeatureFlags: () => featureFlags,
+      });
+
       testUsingContext('Injecting creates generated Linux registrant', () async {
         when(linuxProject.existsSync()).thenReturn(true);
         when(featureFlags.isLinuxEnabled).thenReturn(true);
@@ -927,7 +960,7 @@ flutter:
 
         expect(registrantHeader.existsSync(), isTrue);
         expect(registrantImpl.existsSync(), isTrue);
-        expect(registrantImpl.readAsStringSync(), contains('SomePluginRegisterWithRegistrar'));
+        expect(registrantImpl.readAsStringSync(), contains('some_plugin_register_with_registrar'));
       }, overrides: <Type, Generator>{
         FileSystem: () => fs,
         ProcessManager: () => FakeProcessManager.any(),
@@ -955,13 +988,43 @@ flutter:
 
         expect(registrantImpl, exists);
         expect(registrantImpl, isNot(contains('SomePlugin')));
+        expect(registrantImpl, isNot(contains('some_plugin')));
       }, overrides: <Type, Generator>{
         FileSystem: () => fs,
         ProcessManager: () => FakeProcessManager.any(),
         FeatureFlags: () => featureFlags,
       });
 
-      testUsingContext('Injecting creates generated Linux plugin makefile', () async {
+      testUsingContext('pluginClass: none doesn\'t trigger registrant entry on Linux', () async {
+        when(linuxProject.existsSync()).thenReturn(true);
+        when(featureFlags.isLinuxEnabled).thenReturn(true);
+        when(flutterProject.isModule).thenReturn(false);
+        // Create a plugin without a pluginClass.
+        dummyPackageDirectory.parent.childFile('pubspec.yaml')
+          ..createSync(recursive: true)
+          ..writeAsStringSync('''
+flutter:
+  plugin:
+    platforms:
+      linux:
+        pluginClass: none
+        dartPluginClass: SomePlugin
+    ''');
+
+        await injectPlugins(flutterProject, checkProjects: true);
+
+        final File registrantImpl = linuxProject.managedDirectory.childFile('generated_plugin_registrant.cc');
+
+        expect(registrantImpl, exists);
+        expect(registrantImpl, isNot(contains('SomePlugin')));
+        expect(registrantImpl, isNot(contains('none')));
+      }, overrides: <Type, Generator>{
+        FileSystem: () => fs,
+        ProcessManager: () => FakeProcessManager.any(),
+        FeatureFlags: () => featureFlags,
+      });
+
+      testUsingContext('Injecting creates generated Linux plugin Cmake file', () async {
         when(linuxProject.existsSync()).thenReturn(true);
         when(featureFlags.isLinuxEnabled).thenReturn(true);
         when(flutterProject.isModule).thenReturn(false);
@@ -969,16 +1032,14 @@ flutter:
 
         await injectPlugins(flutterProject, checkProjects: true);
 
-        final File pluginMakefile = linuxProject.generatedPluginMakeFile;
+        final File pluginMakefile = linuxProject.generatedPluginCmakeFile;
 
         expect(pluginMakefile.existsSync(), isTrue);
         final String contents = pluginMakefile.readAsStringSync();
-        expect(contents, contains('libapackage_plugin.so'));
-        // Verify all the variables the app-level Makefile rely on.
-        expect(contents, contains('PLUGIN_TARGETS='));
-        expect(contents, contains('PLUGIN_LIBRARIES='));
-        expect(contents, contains('PLUGIN_LDFLAGS='));
-        expect(contents, contains('PLUGIN_CPPFLAGS='));
+        expect(contents, contains('apackage'));
+        expect(contents, contains('target_link_libraries(\${BINARY_NAME} PRIVATE \${plugin}_plugin)'));
+        expect(contents, contains('list(APPEND PLUGIN_BUNDLED_LIBRARIES \$<TARGET_FILE:\${plugin}_plugin>)'));
+        expect(contents, contains('list(APPEND PLUGIN_BUNDLED_LIBRARIES \${\${plugin}_bundled_libraries})'));
       }, overrides: <Type, Generator>{
         FileSystem: () => fs,
         ProcessManager: () => FakeProcessManager.any(),
@@ -1032,6 +1093,38 @@ flutter:
 
         expect(registrantImpl, exists);
         expect(registrantImpl, isNot(contains('SomePlugin')));
+      }, overrides: <Type, Generator>{
+        FileSystem: () => fs,
+        ProcessManager: () => FakeProcessManager.any(),
+        FeatureFlags: () => featureFlags,
+      });
+
+      testUsingContext('pluginClass: none doesn\'t trigger registrant entry on Windows', () async {
+        when(windowsProject.existsSync()).thenReturn(true);
+        when(featureFlags.isWindowsEnabled).thenReturn(true);
+        when(flutterProject.isModule).thenReturn(false);
+        // Create a plugin without a pluginClass.
+        dummyPackageDirectory.parent.childFile('pubspec.yaml')
+          ..createSync(recursive: true)
+          ..writeAsStringSync('''
+flutter:
+  plugin:
+    platforms:
+      windows:
+        pluginClass: none
+        dartPluginClass: SomePlugin
+    ''');
+
+        createDummyWindowsSolutionFile();
+        createDummyPluginWindowsProjectFile();
+
+        await injectPlugins(flutterProject, checkProjects: true);
+
+        final File registrantImpl = windowsProject.managedDirectory.childFile('generated_plugin_registrant.cc');
+
+        expect(registrantImpl, exists);
+        expect(registrantImpl, isNot(contains('SomePlugin')));
+        expect(registrantImpl, isNot(contains('none')));
       }, overrides: <Type, Generator>{
         FileSystem: () => fs,
         ProcessManager: () => FakeProcessManager.any(),
@@ -1208,6 +1301,51 @@ flutter:
         ProcessManager: () => FakeProcessManager.any(),
         FeatureFlags: () => featureFlags,
       });
+    });
+
+    group('pubspec', () {
+
+      Directory projectDir;
+      Directory tempDir;
+      setUp(() {
+        tempDir = globals.fs.systemTempDirectory.createTempSync('plugin_test.');
+        projectDir = tempDir.childDirectory('flutter_project');
+      });
+
+      tearDown(() {
+        tryToDelete(tempDir);
+      });
+
+      void _createPubspecFile(String yamlString) {
+        projectDir.childFile('pubspec.yaml')..createSync(recursive: true)..writeAsStringSync(yamlString);
+      }
+
+      test('validatePubspecForPlugin works', () async {
+        _createPubspecFile(_pluginYaml);
+        validatePubspecForPlugin(projectDir: projectDir.absolute.path, pluginClass: 'SomePlugin', expectedPlatforms: <String>[
+          'ios', 'macos', 'windows', 'linux', 'android', 'web'
+        ], androidIdentifier: 'AndroidPackage', webFileName: 'lib/SomeFile.dart');
+      });
+
+      test('createPlatformsYamlMap should create the correct map', () async {
+        final YamlMap map = Plugin.createPlatformsYamlMap(<String>['ios', 'android', 'linux'], 'PluginClass', 'some.android.package');
+        expect(map['ios'], <String, String> {
+          'pluginClass' : 'PluginClass'
+        });
+        expect(map['android'], <String, String> {
+          'pluginClass' : 'PluginClass',
+          'package': 'some.android.package',
+        });
+        expect(map['linux'], <String, String> {
+          'pluginClass' : 'PluginClass'
+        });
+      });
+
+      test('createPlatformsYamlMap should create empty map', () async {
+        final YamlMap map = Plugin.createPlatformsYamlMap(<String>[], null, null);
+        expect(map.isEmpty, true);
+      });
+
     });
   });
 }

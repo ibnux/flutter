@@ -51,6 +51,7 @@ abstract class FlutterTestRunner {
     Directory coverageDirectory,
     bool web = false,
     String randomSeed,
+    @required List<String> extraFrontEndOptions,
   });
 }
 
@@ -84,6 +85,7 @@ class _FlutterTestRunnerImpl implements FlutterTestRunner {
     Directory coverageDirectory,
     bool web = false,
     String randomSeed,
+    @required List<String> extraFrontEndOptions,
   }) async {
     // Configure package:test to use the Flutter engine for child processes.
     final String shellPath = globals.artifacts.getArtifactPath(Artifact.flutterTester);
@@ -175,6 +177,7 @@ class _FlutterTestRunnerImpl implements FlutterTestRunner {
       projectRootDirectory: globals.fs.currentDirectory.uri,
       flutterProject: flutterProject,
       icudtlPath: icudtlPath,
+      extraFrontEndOptions: extraFrontEndOptions,
     );
 
     // Make the global packages path absolute.

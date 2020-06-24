@@ -2,10 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-// TODO(shihaohong): remove ignoring deprecated member use analysis
-// when AlertDialog.scrollable parameter is removed. See
-// https://flutter.dev/go/scrollable-alert-dialog for more details.
-// ignore_for_file: deprecated_member_use_from_same_package
+// @dart = 2.8
 
 import 'dart:async';
 
@@ -117,7 +114,7 @@ class Dialog extends StatelessWidget {
   ///
   /// Defines the dialog's [Material.shape].
   ///
-  /// The default shape is a [RoundedRectangleBorder] with a radius of 2.0.
+  /// The default shape is a [RoundedRectangleBorder] with a radius of 4.0
   /// {@endtemplate}
   final ShapeBorder shape;
 
@@ -126,9 +123,8 @@ class Dialog extends StatelessWidget {
   /// {@macro flutter.widgets.child}
   final Widget child;
 
-  // TODO(johnsonmh): Update default dialog border radius to 4.0 to match material spec.
   static const RoundedRectangleBorder _defaultDialogShape =
-    RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(2.0)));
+    RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(4.0)));
   static const double _defaultElevation = 24.0;
 
   @override
@@ -712,6 +708,7 @@ class SimpleDialog extends StatelessWidget {
     Key key,
     this.title,
     this.titlePadding = const EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 0.0),
+    this.titleTextStyle,
     this.children,
     this.contentPadding = const EdgeInsets.fromLTRB(0.0, 12.0, 0.0, 16.0),
     this.backgroundColor,
@@ -738,6 +735,12 @@ class SimpleDialog extends StatelessWidget {
   /// See [contentPadding] for the conventions regarding padding between the
   /// [title] and the [children].
   final EdgeInsetsGeometry titlePadding;
+
+  /// Style for the text in the [title] of this [SimpleDialog].
+  ///
+  /// If null, [DialogTheme.titleTextStyle] is used, if that's null, defaults to
+  /// [ThemeData.textTheme.headline6].
+  final TextStyle titleTextStyle;
 
   /// The (optional) content of the dialog is displayed in a
   /// [SingleChildScrollView] underneath the title.
@@ -814,7 +817,7 @@ class SimpleDialog extends StatelessWidget {
               Padding(
                 padding: titlePadding,
                 child: DefaultTextStyle(
-                  style: theme.textTheme.headline6,
+                  style: titleTextStyle ?? DialogTheme.of(context).titleTextStyle ?? theme.textTheme.headline6,
                   child: Semantics(namesRoute: true, child: title),
                 ),
               ),

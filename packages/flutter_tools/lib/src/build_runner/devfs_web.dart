@@ -48,6 +48,15 @@ typedef DwdsLauncher = Future<Dwds> Function({
   ExpressionCompiler expressionCompiler,
 });
 
+// A minimal index for projects that do not yet support web.
+const String _kDefaultIndex = '''
+<html>
+    <body>
+        <script src="main.dart.js"></script>
+    </body>
+</html>
+''';
+
 /// An expression compiler connecting to FrontendServer
 ///
 /// This is only used in development mode
@@ -145,7 +154,7 @@ class WebAssetServer implements AssetReader {
         address = (await InternetAddress.lookup(hostname)).first;
       }
       final HttpServer httpServer = await HttpServer.bind(address, port);
-      final PackageConfig packageConfig = await loadPackageConfigOrFail(
+      final PackageConfig packageConfig = await loadPackageConfigWithLogging(
         globals.fs.file(globalPackagesPath),
         logger: globals.logger,
       );
@@ -266,7 +275,10 @@ class WebAssetServer implements AssetReader {
   // handle requests for JavaScript source, dart sources maps, or asset files.
   @visibleForTesting
   Future<shelf.Response> handleRequest(shelf.Request request) async {
-    final String requestPath = request.url.path;
+    String requestPath = request.url.path;
+    while (requestPath.startsWith('/')) {
+      requestPath = requestPath.substring(1);
+    }
     final Map<String, String> headers = <String, String>{};
     // If the response is `/`, then we are requesting the index file.
     if (request.url.path == '/' || request.url.path.isEmpty) {
@@ -277,8 +289,11 @@ class WebAssetServer implements AssetReader {
         headers[HttpHeaders.contentTypeHeader] = 'text/html';
         headers[HttpHeaders.contentLengthHeader] = indexFile.lengthSync().toString();
         return shelf.Response.ok(indexFile.openRead(), headers: headers);
+      } else {
+        headers[HttpHeaders.contentTypeHeader] = 'text/html';
+        headers[HttpHeaders.contentLengthHeader] = _kDefaultIndex.length.toString();
+        return shelf.Response.ok(_kDefaultIndex, headers: headers);
       }
-      return shelf.Response.notFound('');
     }
 
     // Track etag headers for better caching of resources.
@@ -327,8 +342,9 @@ class WebAssetServer implements AssetReader {
     }
 
     if (!file.existsSync()) {
-      final String webPath = globals.fs.path.join(
-        globals.fs.currentDirectory.childDirectory('web').path, requestPath);
+      final Uri webPath = globals.fs.currentDirectory
+        .childDirectory('web')
+        .uri.resolve(requestPath);
       file = globals.fs.file(webPath);
     }
 
@@ -338,7 +354,8 @@ class WebAssetServer implements AssetReader {
 
     // For real files, use a serialized file stat plus path as a revision.
     // This allows us to update between canvaskit and non-canvaskit SDKs.
-    final String etag = file.lastModifiedSync().toIso8601String() + file.path;
+    final String etag = file.lastModifiedSync().toIso8601String()
+      + Uri.encodeComponent(file.path);
     if (ifNoneMatch == etag) {
       return shelf.Response.notModified();
     }
@@ -500,10 +517,13 @@ class WebAssetServer implements AssetReader {
     // The file might have been a package file which is signaled by a
     // `/packages/<package>/<path>` request.
     if (segments.first == 'packages') {
-      final File packageFile = globals.fs.file(_packages.resolve(Uri(
-        scheme: 'package', pathSegments: segments.skip(1))));
-      if (packageFile.existsSync()) {
-        return packageFile;
+      final Uri filePath = _packages.resolve(Uri(
+        scheme: 'package', pathSegments: segments.skip(1)));
+      if (filePath != null) {
+        final File packageFile = globals.fs.file(filePath);
+        if (packageFile.existsSync()) {
+          return packageFile;
+        }
       }
     }
 
@@ -511,16 +531,14 @@ class WebAssetServer implements AssetReader {
     final Directory dartSdkParent = globals.fs
       .directory(globals.artifacts.getArtifactPath(Artifact.engineDartSdkPath))
       .parent;
-    final File dartSdkFile = globals.fs.file(globals.fs.path
-      .joinAll(<String>[dartSdkParent.path, ...segments]));
+    final File dartSdkFile = globals.fs.file(dartSdkParent.uri.resolve(path));
     if (dartSdkFile.existsSync()) {
       return dartSdkFile;
     }
 
-    final String flutterWebSdk = globals.artifacts
-      .getArtifactPath(Artifact.flutterWebSdk);
-    final File webSdkFile = globals.fs
-      .file(globals.fs.path.joinAll(<String>[flutterWebSdk, ...segments]));
+    final Directory flutterWebSdk = globals.fs.directory(globals.artifacts
+      .getArtifactPath(Artifact.flutterWebSdk));
+    final File webSdkFile = globals.fs.file(flutterWebSdk.uri.resolve(path));
 
     return webSdkFile;
   }
@@ -537,6 +555,11 @@ class WebAssetServer implements AssetReader {
   @override
   Future<String> sourceMapContents(String serverPath) async {
     return utf8.decode(_sourcemaps[serverPath]);
+  }
+
+  @override
+  Future<String> metadataContents(String serverPath) {
+    return null;
   }
 }
 
@@ -814,7 +837,8 @@ class ReleaseAssetServer {
     } else {
       for (final Uri uri in _searchPaths) {
         final Uri potential = uri.resolve(request.url.path);
-        if (potential == null || !globals.fs.isFileSync(potential.toFilePath())) {
+        if (potential == null || !globals.fs.isFileSync(
+          potential.toFilePath(windows: globals.platform.isWindows))) {
           continue;
         }
         fileUri = potential;

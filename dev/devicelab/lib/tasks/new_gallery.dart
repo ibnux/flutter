@@ -19,7 +19,7 @@ class NewGalleryPerfTest extends PerfTest {
     // Manually roll the new gallery version for now. If the new gallery repo
     // turns out to be updated frequently in the future, we can set up an auto
     // roller to update this version.
-    await getNewGallery('59489e5571ddf554fc62ef52e9b16f1fed291026', galleryDir);
+    await getNewGallery('8cd83418728531067a1768eccd10b1d197d61d15', galleryDir);
     return await super.run();
   }
 

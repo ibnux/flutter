@@ -4,19 +4,18 @@
 
 import 'package:file/memory.dart';
 import 'package:flutter_tools/src/base/context.dart';
-import 'package:flutter_tools/src/project.dart';
-import 'package:mockito/mockito.dart';
-import 'package:process/process.dart';
-import 'package:platform/platform.dart';
-
 import 'package:flutter_tools/src/base/file_system.dart';
 import 'package:flutter_tools/src/base/io.dart';
+import 'package:flutter_tools/src/base/platform.dart';
 import 'package:flutter_tools/src/build_info.dart';
 import 'package:flutter_tools/src/device.dart';
 import 'package:flutter_tools/src/features.dart';
+import 'package:flutter_tools/src/globals.dart' as globals;
 import 'package:flutter_tools/src/macos/application_package.dart';
 import 'package:flutter_tools/src/macos/macos_device.dart';
-import 'package:flutter_tools/src/globals.dart' as globals;
+import 'package:flutter_tools/src/project.dart';
+import 'package:mockito/mockito.dart';
+import 'package:process/process.dart';
 
 import '../../src/common.dart';
 import '../../src/context.dart';
@@ -41,12 +40,17 @@ void main() {
     testUsingContext('defaults', () async {
       final MockMacOSApp mockMacOSApp = MockMacOSApp();
       expect(await device.targetPlatform, TargetPlatform.darwin_x64);
-      expect(device.name, 'macOS');
+      expect(device.name, 'macOS desktop');
       expect(await device.installApp(mockMacOSApp), true);
       expect(await device.uninstallApp(mockMacOSApp), true);
       expect(await device.isLatestBuildInstalled(mockMacOSApp), true);
       expect(await device.isAppInstalled(mockMacOSApp), true);
       expect(device.category, Category.desktop);
+
+      expect(device.supportsRuntimeMode(BuildMode.debug), true);
+      expect(device.supportsRuntimeMode(BuildMode.profile), true);
+      expect(device.supportsRuntimeMode(BuildMode.release), true);
+      expect(device.supportsRuntimeMode(BuildMode.jitRelease), false);
     });
 
     testUsingContext('No devices listed if platform unsupported', () async {

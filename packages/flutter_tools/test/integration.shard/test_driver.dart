@@ -191,7 +191,7 @@ abstract class FlutterTestDriver {
     // ceases to be the case, this code will need changing.
     if (_flutterIsolateId == null) {
       final VM vm = await _vmService.getVM();
-      _flutterIsolateId = vm.isolates.first.id;
+      _flutterIsolateId = vm.isolates.single.id;
     }
     return _flutterIsolateId;
   }
@@ -437,6 +437,8 @@ class FlutterRunTestDriver extends FlutterTestDriver {
     bool startPaused = false,
     bool pauseOnExceptions = false,
     bool chrome = false,
+    bool expressionEvaluation = true,
+    bool structuredErrors = false,
     File pidFile,
     String script,
   }) async {
@@ -448,9 +450,15 @@ class FlutterRunTestDriver extends FlutterTestDriver {
         '--machine',
         '-d',
         if (chrome)
-          ...<String>['chrome', '--web-run-headless', '--web-enable-expression-evaluation']
+          ...<String>[
+            'chrome',
+            '--web-run-headless',
+            if (!expressionEvaluation) '--no-web-enable-expression-evaluation'
+          ]
         else
           'flutter-tester',
+        if (structuredErrors)
+          '--dart-define=flutter.inspector.structuredErrors=true',
       ],
       withDebugger: withDebugger,
       startPaused: startPaused,

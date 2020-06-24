@@ -2,6 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+// @dart = 2.8
+
 import 'dart:async';
 import 'dart:collection' show HashMap;
 
@@ -200,7 +202,7 @@ class WidgetsApp extends StatefulWidget {
        assert(
          home == null ||
          onGenerateInitialRoutes == null,
-         'If onGenerateInitialRoutes is specifiied, the home argument will be '
+         'If onGenerateInitialRoutes is specified, the home argument will be '
          'redundant.'
        ),
        assert(
@@ -404,10 +406,11 @@ class WidgetsApp extends StatefulWidget {
   /// Defaults to [Window.defaultRouteName], which may be overridden by the code
   /// that launched the application.
   ///
-  /// If the route contains slashes, then it is treated as a "deep link", and
-  /// before this route is pushed, the routes leading to this one are pushed
-  /// also. For example, if the route was `/a/b/c`, then the app would start
-  /// with the three routes `/a`, `/a/b`, and `/a/b/c` loaded, in that order.
+  /// If the route name starts with a slash and has multiple slashes in it, then
+  /// it is treated as a "deep link", and before this route is pushed, the
+  /// routes leading to this one are pushed also. For example, if the route was
+  /// `/a/b/c`, then the app would start with the three routes `/a`, `/a/b`, and
+  /// `/a/b/c` loaded, in that order.
   ///
   /// Intermediate routes aren't required to exist. In the example above, `/a`
   /// and `/a/b` could be skipped if they have no matching route. But `/a/b/c` is
@@ -849,6 +852,10 @@ class WidgetsApp extends StatefulWidget {
     LogicalKeySet(LogicalKeyboardKey.space): const ActivateIntent(),
     LogicalKeySet(LogicalKeyboardKey.gameButtonA): const ActivateIntent(),
 
+    // Dismissal
+    LogicalKeySet(LogicalKeyboardKey.escape): const DismissIntent(),
+    LogicalKeySet(LogicalKeyboardKey.gameButtonB): const ActivateIntent(),
+
     // Keyboard traversal.
     LogicalKeySet(LogicalKeyboardKey.tab): const NextFocusIntent(),
     LogicalKeySet(LogicalKeyboardKey.shift, LogicalKeyboardKey.tab): const PreviousFocusIntent(),
@@ -871,6 +878,9 @@ class WidgetsApp extends StatefulWidget {
     // Activation
     LogicalKeySet(LogicalKeyboardKey.space): const ActivateIntent(),
 
+    // Dismissal
+    LogicalKeySet(LogicalKeyboardKey.escape): const DismissIntent(),
+
     // Keyboard traversal.
     LogicalKeySet(LogicalKeyboardKey.tab): const NextFocusIntent(),
     LogicalKeySet(LogicalKeyboardKey.shift, LogicalKeyboardKey.tab): const PreviousFocusIntent(),
@@ -889,6 +899,9 @@ class WidgetsApp extends StatefulWidget {
     // Activation
     LogicalKeySet(LogicalKeyboardKey.enter): const ActivateIntent(),
     LogicalKeySet(LogicalKeyboardKey.space): const ActivateIntent(),
+
+    // Dismissal
+    LogicalKeySet(LogicalKeyboardKey.escape): const DismissIntent(),
 
     // Keyboard traversal
     LogicalKeySet(LogicalKeyboardKey.tab): const NextFocusIntent(),
@@ -1189,7 +1202,7 @@ class _WidgetsAppState extends State<WidgetsApp> with WidgetsBindingObserver {
         }
       }
       // countryCode-only match. When all else except default supported locale fails,
-      // attempt to match by country only, as a user is likely to be familar with a
+      // attempt to match by country only, as a user is likely to be familiar with a
       // language from their listed country.
       if (matchesCountryCode == null && userLocale.countryCode != null) {
         match = countryLocales[userLocale.countryCode];
@@ -1200,7 +1213,7 @@ class _WidgetsAppState extends State<WidgetsApp> with WidgetsBindingObserver {
     }
     // When there is no languageCode-only match. Fallback to matching countryCode only. Country
     // fallback only applies on iOS. When there is no countryCode-only match, we return first
-    // suported locale.
+    // supported locale.
     final Locale resolvedLocale = matchesLanguageCode ?? matchesCountryCode ?? supportedLocales.first;
     return resolvedLocale;
   }
@@ -1471,8 +1484,12 @@ class _MediaQueryFromWindowsState extends State<_MediaQueryFromWindow> with Widg
 
   @override
   Widget build(BuildContext context) {
+    MediaQueryData data = MediaQueryData.fromWindow(WidgetsBinding.instance.window);
+    if (!kReleaseMode) {
+      data = data.copyWith(platformBrightness: debugBrightnessOverride);
+    }
     return MediaQuery(
-      data: MediaQueryData.fromWindow(WidgetsBinding.instance.window),
+      data: data,
       child: widget.child,
     );
   }

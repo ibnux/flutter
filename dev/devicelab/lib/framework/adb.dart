@@ -12,6 +12,14 @@ import 'package:path/path.dart' as path;
 
 import 'utils.dart';
 
+class DeviceException implements Exception {
+  const DeviceException(this.message);
+
+  final String message;
+
+  @override
+  String toString() => message == null ? '$DeviceException' : '$DeviceException: $message';
+}
 
 /// Gets the artifact path relative to the current directory.
 String getArtifactPath() {
@@ -43,7 +51,7 @@ abstract class DeviceDiscovery {
       case DeviceOperatingSystem.fuchsia:
         return FuchsiaDeviceDiscovery();
       default:
-        throw StateError('Unsupported device operating system: {config.deviceOperatingSystem}');
+        throw const DeviceException('Unsupported device operating system: {config.deviceOperatingSystem}');
     }
   }
 
@@ -73,6 +81,9 @@ abstract class DeviceDiscovery {
 
 /// A proxy for one specific device.
 abstract class Device {
+  // Const constructor so subclasses may be const.
+  const Device();
+
   /// A unique device identifier.
   String get deviceId;
 
@@ -110,6 +121,11 @@ abstract class Device {
 
   /// Stop a process.
   Future<void> stop(String packageName);
+
+  @override
+  String toString() {
+    return 'device: $deviceId';
+  }
 }
 
 class AndroidDeviceDiscovery implements DeviceDiscovery {
@@ -146,10 +162,11 @@ class AndroidDeviceDiscovery implements DeviceDiscovery {
       .toList();
 
     if (allDevices.isEmpty)
-      throw 'No Android devices detected';
+      throw const DeviceException('No Android devices detected');
 
     // TODO(yjbanov): filter out and warn about those with low battery level
     _workingDevice = allDevices[math.Random().nextInt(allDevices.length)];
+    print('Device chosen: $_workingDevice');
   }
 
   @override
@@ -175,7 +192,7 @@ class AndroidDeviceDiscovery implements DeviceDiscovery {
           results.add(deviceID);
         }
       } else {
-        throw 'Failed to parse device from adb output: "$line"';
+        throw FormatException('Failed to parse device from adb output: "$line"');
       }
     }
 
@@ -192,7 +209,7 @@ class AndroidDeviceDiscovery implements DeviceDiscovery {
         // TODO(yjbanov): check battery level
         await device._getWakefulness();
         results['android-device-$deviceId'] = HealthCheckResult.success();
-      } catch (e, s) {
+      } on Exception catch (e, s) {
         results['android-device-$deviceId'] = HealthCheckResult.error(e, s);
       }
     }
@@ -246,9 +263,10 @@ class FuchsiaDeviceDiscovery implements DeviceDiscovery {
       .toList();
 
     if (allDevices.isEmpty) {
-      throw Exception('No Fuchsia devices detected');
+      throw const DeviceException('No Fuchsia devices detected');
     }
     _workingDevice = allDevices.first;
+    print('Device chosen: $_workingDevice');
   }
 
   @override
@@ -285,7 +303,7 @@ class FuchsiaDeviceDiscovery implements DeviceDiscovery {
         } else {
           results['fuchsia-device-$deviceId'] = HealthCheckResult.failure('Cannot resolve device $deviceId');
         }
-      } catch (error, stacktrace) {
+      } on Exception catch (error, stacktrace) {
         results['fuchsia-device-$deviceId'] = HealthCheckResult.error(error, stacktrace);
       }
     }
@@ -296,11 +314,14 @@ class FuchsiaDeviceDiscovery implements DeviceDiscovery {
   Future<void> performPreflightTasks() async {}
 }
 
-class AndroidDevice implements Device {
-  AndroidDevice({@required this.deviceId});
+class AndroidDevice extends Device {
+  AndroidDevice({@required this.deviceId}) {
+    _updateDeviceInfo();
+  }
 
   @override
   final String deviceId;
+  String deviceInfo = '';
 
   /// Whether the device is awake.
   @override
@@ -358,19 +379,53 @@ class AndroidDevice implements Device {
     return wakefulness;
   }
 
+  Future<void> _updateDeviceInfo() async {
+    String info;
+    try {
+      info = await shellEval(
+        'getprop',
+        <String>[
+          'ro.bootimage.build.fingerprint', ';',
+          'getprop', 'ro.build.version.release', ';',
+          'getprop', 'ro.build.version.sdk',
+        ],
+        silent: true,
+      );
+    } on IOException {
+      info = '';
+    }
+    final List<String> list = info.split('\n');
+    if (list.length == 3) {
+      deviceInfo = 'fingerprint: ${list[0]} os: ${list[1]}  api-level: ${list[2]}';
+    } else {
+      deviceInfo = '';
+    }
+  }
+
   /// Executes [command] on `adb shell` and returns its exit code.
-  Future<void> shellExec(String command, List<String> arguments, { Map<String, String> environment }) async {
-    await adb(<String>['shell', command, ...arguments], environment: environment);
+  Future<void> shellExec(String command, List<String> arguments, { Map<String, String> environment, bool silent = false }) async {
+    await adb(<String>['shell', command, ...arguments], environment: environment, silent: silent);
   }
 
   /// Executes [command] on `adb shell` and returns its standard output as a [String].
-  Future<String> shellEval(String command, List<String> arguments, { Map<String, String> environment }) {
-    return adb(<String>['shell', command, ...arguments], environment: environment);
+  Future<String> shellEval(String command, List<String> arguments, { Map<String, String> environment, bool silent = false }) {
+    return adb(<String>['shell', command, ...arguments], environment: environment, silent: silent);
   }
 
   /// Runs `adb` with the given [arguments], selecting this device.
-  Future<String> adb(List<String> arguments, { Map<String, String> environment }) {
-    return eval(adbPath, <String>['-s', deviceId, ...arguments], environment: environment, canFail: false);
+  Future<String> adb(
+      List<String> arguments, {
+      Map<String, String> environment,
+      bool silent = false,
+    }) {
+    return eval(
+      adbPath,
+      <String>['-s', deviceId, ...arguments],
+      environment: environment,
+      canFail: false,
+      printStdout: !silent,
+      printStderr: !silent,
+    );
   }
 
   @override
@@ -453,6 +508,11 @@ class AndroidDevice implements Device {
   Future<void> stop(String packageName) async {
     return shellExec('am', <String>['force-stop', packageName]);
   }
+
+  @override
+  String toString() {
+    return '$deviceId $deviceInfo';
+  }
 }
 
 class IosDeviceDiscovery implements DeviceDiscovery {
@@ -484,35 +544,56 @@ class IosDeviceDiscovery implements DeviceDiscovery {
       .toList();
 
     if (allDevices.isEmpty)
-      throw 'No iOS devices detected';
+      throw const DeviceException('No iOS devices detected');
 
     // TODO(yjbanov): filter out and warn about those with low battery level
     _workingDevice = allDevices[math.Random().nextInt(allDevices.length)];
-  }
-
-  // Returns a colon-separated environment variable that contains the paths
-  // of linked libraries for idevice_id
-  Map<String, String> get _ideviceIdEnvironment {
-    final String libPath = const <String>[
-      'libimobiledevice',
-      'usbmuxd',
-      'libplist',
-      'openssl',
-      'ios-deploy',
-    ].map((String packageName) => path.join(getArtifactPath(), packageName)).join(':');
-    return <String, String>{'DYLD_LIBRARY_PATH': libPath};
+    print('Device chosen: $_workingDevice');
   }
 
   @override
   Future<List<String>> discoverDevices() async {
-    final String ideviceIdPath = path.join(getArtifactPath(), 'libimobiledevice', 'idevice_id');
-    final List<String> iosDeviceIDs = LineSplitter.split(await eval(ideviceIdPath, <String>['-l'], environment: _ideviceIdEnvironment))
-      .map<String>((String line) => line.trim())
-      .where((String line) => line.isNotEmpty)
-      .toList();
-    if (iosDeviceIDs.isEmpty)
-      throw 'No connected iOS devices found.';
-    return iosDeviceIDs;
+    final List<dynamic> results = json.decode(await eval(
+      path.join(flutterDirectory.path, 'bin', 'flutter'),
+      <String>['devices', '--machine', '--suppress-analytics'],
+    )) as List<dynamic>;
+
+    // [
+    //   {
+    //     "name": "Flutter's iPhone",
+    //     "id": "00008020-00017DA80CC1002E",
+    //     "isSupported": true,
+    //     "targetPlatform": "ios",
+    //     "emulator": false,
+    //     "sdk": "iOS 13.2",
+    //     "capabilities": {
+    //       "hotReload": true,
+    //       "hotRestart": true,
+    //       "screenshot": true,
+    //       "fastStart": false,
+    //       "flutterExit": true,
+    //       "hardwareRendering": false,
+    //       "startPaused": false
+    //     }
+    //   }
+    // ]
+
+    final List<String> deviceIds = <String>[];
+
+    for (final dynamic result in results) {
+      final Map<String, dynamic> device = result as Map<String, dynamic>;
+      if (device['targetPlatform'] == 'ios' &&
+          device['id'] != null &&
+          device['emulator'] != true &&
+          device['isSupported'] == true) {
+        deviceIds.add(device['id'] as String);
+      }
+    }
+
+    if (deviceIds.isEmpty) {
+      throw const DeviceException('No connected iOS devices found.');
+    }
+    return deviceIds;
   }
 
   @override
@@ -532,7 +613,7 @@ class IosDeviceDiscovery implements DeviceDiscovery {
 }
 
 /// iOS device.
-class IosDevice implements Device {
+class IosDevice extends Device {
   const IosDevice({ @required this.deviceId });
 
   @override
@@ -563,17 +644,17 @@ class IosDevice implements Device {
 
   @override
   Future<void> tap(int x, int y) async {
-    throw 'Not implemented';
+    throw UnimplementedError();
   }
 
   @override
   Future<Map<String, dynamic>> getMemoryStats(String packageName) async {
-    throw 'Not implemented';
+    throw UnimplementedError();
   }
 
   @override
   Stream<String> get logcat {
-    throw 'Not implemented';
+    throw UnimplementedError();
   }
 
   @override
@@ -581,7 +662,7 @@ class IosDevice implements Device {
 }
 
 /// Fuchsia device.
-class FuchsiaDevice implements Device {
+class FuchsiaDevice extends Device {
   const FuchsiaDevice({ @required this.deviceId });
 
   @override
@@ -614,12 +695,12 @@ class FuchsiaDevice implements Device {
 
   @override
   Future<Map<String, dynamic>> getMemoryStats(String packageName) async {
-    throw 'Not implemented';
+    throw UnimplementedError();
   }
 
   @override
   Stream<String> get logcat {
-    throw 'Not implemented';
+    throw UnimplementedError();
   }
 }
 
@@ -627,15 +708,18 @@ class FuchsiaDevice implements Device {
 String get adbPath {
   final String androidHome = Platform.environment['ANDROID_HOME'] ?? Platform.environment['ANDROID_SDK_ROOT'];
 
-  if (androidHome == null)
-    throw 'The ANDROID_SDK_ROOT and ANDROID_HOME environment variables are '
-        'missing. At least one of these variables must point to the Android '
-        'SDK directory containing platform-tools.';
+  if (androidHome == null) {
+    throw const DeviceException(
+      'The ANDROID_SDK_ROOT environment variable is '
+      'missing. The variable must point to the Android '
+      'SDK directory containing platform-tools.'
+    );
+  }
 
   final String adbPath = path.join(androidHome, 'platform-tools/adb');
 
   if (!canRun(adbPath))
-    throw 'adb not found at: $adbPath';
+    throw DeviceException('adb not found at: $adbPath');
 
   return path.absolute(adbPath);
 }

@@ -63,6 +63,9 @@ class MaterialLocalizationAf extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Terug';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'KANSELLEER';
 
   @override
@@ -84,6 +87,36 @@ class MaterialLocalizationAf extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'KNIP';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Vee uit';
 
   @override
@@ -97,6 +130,21 @@ class MaterialLocalizationAf extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Versteek rekeninge';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Lisensies';
@@ -183,6 +231,9 @@ class MaterialLocalizationAf extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Rye per bladsy:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -190,6 +241,9 @@ class MaterialLocalizationAf extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'KIES ALLES';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -229,6 +283,12 @@ class MaterialLocalizationAf extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Kies minute';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'BEKYK LISENSIES';
@@ -276,6 +336,9 @@ class MaterialLocalizationAm extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'ተመለስ';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ይቅር';
 
   @override
@@ -297,6 +360,36 @@ class MaterialLocalizationAm extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ቁረጥ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'ሰርዝ';
 
   @override
@@ -310,6 +403,21 @@ class MaterialLocalizationAm extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'መለያዎችን ደብቅ';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'ፈቃዶች';
@@ -396,6 +504,9 @@ class MaterialLocalizationAm extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'ረድፎች በገጽ፦';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -403,6 +514,9 @@ class MaterialLocalizationAm extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ሁሉንም ምረጥ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -442,6 +556,12 @@ class MaterialLocalizationAm extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'ደቂቃዎችን ይምረጡ';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ፈቃዶችን ይመልከቱ';
@@ -489,6 +609,9 @@ class MaterialLocalizationAr extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'رجوع';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'إلغاء';
 
   @override
@@ -510,6 +633,36 @@ class MaterialLocalizationAr extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'قص';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'حذف';
 
   @override
@@ -523,6 +676,21 @@ class MaterialLocalizationAr extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'إخفاء الحسابات';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'التراخيص';
@@ -609,6 +777,9 @@ class MaterialLocalizationAr extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'عدد الصفوف في الصفحة:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.tall;
 
   @override
@@ -616,6 +787,9 @@ class MaterialLocalizationAr extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'اختيار الكل';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => 'تم اختيار \$selectedRowCount عنصر';
@@ -655,6 +829,12 @@ class MaterialLocalizationAr extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'اختيار الدقائق';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'الاطّلاع على التراخيص';
@@ -702,6 +882,9 @@ class MaterialLocalizationAs extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'উভতি যাওক';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'বাতিল কৰক';
 
   @override
@@ -723,6 +906,36 @@ class MaterialLocalizationAs extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'কাট কৰক';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'মচক';
 
   @override
@@ -736,6 +949,21 @@ class MaterialLocalizationAs extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'একাউণ্টসমূহ লুকুৱাওক';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'অনুজ্ঞাপত্ৰসমূহ';
@@ -822,6 +1050,9 @@ class MaterialLocalizationAs extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'প্ৰতিটো পৃষ্ঠাত থকা শাৰী:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -829,6 +1060,9 @@ class MaterialLocalizationAs extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'সকলো বাছনি কৰক';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -868,6 +1102,12 @@ class MaterialLocalizationAs extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'মিনিট বাছনি কৰক';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'অনুজ্ঞাপত্ৰসমূহ চাওক';
@@ -915,6 +1155,9 @@ class MaterialLocalizationAz extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Geri';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'LƏĞV EDİN';
 
   @override
@@ -936,6 +1179,36 @@ class MaterialLocalizationAz extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'KƏSİN';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Silin';
 
   @override
@@ -949,6 +1222,21 @@ class MaterialLocalizationAz extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Hesabları gizlədin';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Lisenziyalar';
@@ -1035,6 +1323,9 @@ class MaterialLocalizationAz extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Hər səhifə üzrə sıra:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -1042,6 +1333,9 @@ class MaterialLocalizationAz extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'HAMISINI SEÇİN';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -1081,6 +1375,12 @@ class MaterialLocalizationAz extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Dəqiqə seçin';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'LİSENZİYALARA BAXIN';
@@ -1128,6 +1428,9 @@ class MaterialLocalizationBe extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Назад';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'СКАСАВАЦЬ';
 
   @override
@@ -1149,6 +1452,36 @@ class MaterialLocalizationBe extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ВЫРАЗАЦЬ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Выдаліць';
 
   @override
@@ -1162,6 +1495,21 @@ class MaterialLocalizationBe extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Схаваць уліковыя запісы';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Ліцэнзіі';
@@ -1248,6 +1596,9 @@ class MaterialLocalizationBe extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Радкоў на старонку:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -1255,6 +1606,9 @@ class MaterialLocalizationBe extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ВЫБРАЦЬ УСЕ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => 'Выбрана \$selectedRowCount элементы';
@@ -1294,6 +1648,12 @@ class MaterialLocalizationBe extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Выберыце хвіліны';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ПАКАЗАЦЬ ЛІЦЭНЗІІ';
@@ -1341,6 +1701,9 @@ class MaterialLocalizationBg extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Назад';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ОТКАЗ';
 
   @override
@@ -1362,6 +1725,36 @@ class MaterialLocalizationBg extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ИЗРЯЗВАНЕ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Изтриване';
 
   @override
@@ -1375,6 +1768,21 @@ class MaterialLocalizationBg extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Скриване на профилите';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Лицензи';
@@ -1461,6 +1869,9 @@ class MaterialLocalizationBg extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Редове на страница:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -1468,6 +1879,9 @@ class MaterialLocalizationBg extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ИЗБИРАНЕ НА ВСИЧКО';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -1507,6 +1921,12 @@ class MaterialLocalizationBg extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Избиране на минути';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ПРЕГЛЕД НА ЛИЦЕНЗИТЕ';
@@ -1554,6 +1974,9 @@ class MaterialLocalizationBn extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'ফিরে যান';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'বাতিল করুন';
 
   @override
@@ -1575,6 +1998,36 @@ class MaterialLocalizationBn extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'কাট করুন';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'মুছে দিন';
 
   @override
@@ -1588,6 +2041,21 @@ class MaterialLocalizationBn extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'অ্যাকাউন্টগুলি লুকান';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'লাইসেন্স';
@@ -1674,6 +2142,9 @@ class MaterialLocalizationBn extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'প্রতি পৃষ্ঠায় সারির সংখ্যা:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.tall;
 
   @override
@@ -1681,6 +2152,9 @@ class MaterialLocalizationBn extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'সব বেছে নিন';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -1720,6 +2194,12 @@ class MaterialLocalizationBn extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'মিনিট বেছে নিন';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'লাইসেন্স দেখুন';
@@ -1767,6 +2247,9 @@ class MaterialLocalizationBs extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Nazad';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'OTKAŽI';
 
   @override
@@ -1788,6 +2271,36 @@ class MaterialLocalizationBs extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'IZREŽI';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Brisanje';
 
   @override
@@ -1801,6 +2314,21 @@ class MaterialLocalizationBs extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Sakrij račune';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licence';
@@ -1887,6 +2415,9 @@ class MaterialLocalizationBs extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Broj redova po stranici:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -1894,6 +2425,9 @@ class MaterialLocalizationBs extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ODABERI SVE';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => 'Odabrane su \$selectedRowCount stavke';
@@ -1933,6 +2467,12 @@ class MaterialLocalizationBs extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Odaberite minute';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'PRIKAŽI LICENCE';
@@ -1980,6 +2520,9 @@ class MaterialLocalizationCa extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Enrere';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'CANCEL·LA';
 
   @override
@@ -2001,6 +2544,36 @@ class MaterialLocalizationCa extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'RETALLA';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Suprimeix';
 
   @override
@@ -2014,6 +2587,21 @@ class MaterialLocalizationCa extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Amaga els comptes';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Llicències';
@@ -2100,6 +2688,9 @@ class MaterialLocalizationCa extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Files per pàgina:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -2107,6 +2698,9 @@ class MaterialLocalizationCa extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'SELECCIONA-HO TOT';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -2146,6 +2740,12 @@ class MaterialLocalizationCa extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Selecciona els minuts';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'MOSTRA LES LLICÈNCIES';
@@ -2193,6 +2793,9 @@ class MaterialLocalizationCs extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Zpět';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ZRUŠIT';
 
   @override
@@ -2214,6 +2817,36 @@ class MaterialLocalizationCs extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'VYJMOUT';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Smazat';
 
   @override
@@ -2227,6 +2860,21 @@ class MaterialLocalizationCs extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Skrýt účty';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licence';
@@ -2313,6 +2961,9 @@ class MaterialLocalizationCs extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Počet řádků na stránku:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -2320,6 +2971,9 @@ class MaterialLocalizationCs extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'VYBRAT VŠE';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => 'Jsou vybrány \$selectedRowCount položky';
@@ -2359,6 +3013,12 @@ class MaterialLocalizationCs extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Vyberte minuty';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ZOBRAZIT LICENCE';
@@ -2406,6 +3066,9 @@ class MaterialLocalizationDa extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Tilbage';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ANNULLER';
 
   @override
@@ -2427,6 +3090,36 @@ class MaterialLocalizationDa extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'KLIP';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Slet';
 
   @override
@@ -2440,6 +3133,21 @@ class MaterialLocalizationDa extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Skjul konti';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licenser';
@@ -2526,6 +3234,9 @@ class MaterialLocalizationDa extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Rækker pr. side:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -2533,6 +3244,9 @@ class MaterialLocalizationDa extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'VÆLG ALLE';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -2572,6 +3286,12 @@ class MaterialLocalizationDa extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Vælg minutter';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'SE LICENSER';
@@ -2619,6 +3339,9 @@ class MaterialLocalizationDe extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Zurück';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ABBRECHEN';
 
   @override
@@ -2640,6 +3363,36 @@ class MaterialLocalizationDe extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'AUSSCHNEIDEN';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Löschen';
 
   @override
@@ -2653,6 +3406,21 @@ class MaterialLocalizationDe extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Konten ausblenden';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Lizenzen';
@@ -2739,6 +3507,9 @@ class MaterialLocalizationDe extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Zeilen pro Seite:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -2746,6 +3517,9 @@ class MaterialLocalizationDe extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ALLE AUSWÄHLEN';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -2785,6 +3559,12 @@ class MaterialLocalizationDe extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Minuten auswählen';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'LIZENZEN ANZEIGEN';
@@ -2868,6 +3648,9 @@ class MaterialLocalizationEl extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Πίσω';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ΑΚΥΡΩΣΗ';
 
   @override
@@ -2889,6 +3672,36 @@ class MaterialLocalizationEl extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ΑΠΟΚΟΠΗ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Διαγραφή';
 
   @override
@@ -2902,6 +3715,21 @@ class MaterialLocalizationEl extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Απόκρυψη λογαριασμών';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Άδειες';
@@ -2988,6 +3816,9 @@ class MaterialLocalizationEl extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Σειρές ανά σελίδα:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -2995,6 +3826,9 @@ class MaterialLocalizationEl extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ΕΠΙΛΟΓΗ ΟΛΩΝ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -3034,6 +3868,12 @@ class MaterialLocalizationEl extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Επιλογή λεπτών';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ΠΡΟΒΟΛΗ ΑΔΕΙΩΝ';
@@ -3081,6 +3921,9 @@ class MaterialLocalizationEn extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Back';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'CANCEL';
 
   @override
@@ -3096,10 +3939,40 @@ class MaterialLocalizationEn extends GlobalMaterialLocalizations {
   String get continueButtonLabel => 'CONTINUE';
 
   @override
-  String get copyButtonLabel => 'COPY';
+  String get copyButtonLabel => 'Copy';
 
   @override
-  String get cutButtonLabel => 'CUT';
+  String get cutButtonLabel => 'Cut';
+
+  @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
 
   @override
   String get deleteButtonTooltip => 'Delete';
@@ -3115,6 +3988,21 @@ class MaterialLocalizationEn extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Hide accounts';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licenses';
@@ -3144,7 +4032,7 @@ class MaterialLocalizationEn extends GlobalMaterialLocalizations {
   String get pageRowsInfoTitleApproximateRaw => '\$firstRow–\$lastRow of about \$rowCount';
 
   @override
-  String get pasteButtonLabel => 'PASTE';
+  String get pasteButtonLabel => 'Paste';
 
   @override
   String get popupMenuLabel => 'Popup menu';
@@ -3201,13 +4089,19 @@ class MaterialLocalizationEn extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Rows per page:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
   String get searchFieldLabel => 'Search';
 
   @override
-  String get selectAllButtonLabel => 'SELECT ALL';
+  String get selectAllButtonLabel => 'Select all';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -3249,6 +4143,12 @@ class MaterialLocalizationEn extends GlobalMaterialLocalizations {
   String get timePickerMinuteModeAnnouncement => 'Select minutes';
 
   @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
+
+  @override
   String get viewLicensesButtonLabel => 'VIEW LICENSES';
 }
 
@@ -3283,6 +4183,24 @@ class MaterialLocalizationEnAu extends MaterialLocalizationEn {
 
   @override
   String get licensesPageTitle => 'Licences';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 licence';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licences';
+
+  @override
+  String get copyButtonLabel => 'COPY';
+
+  @override
+  String get cutButtonLabel => 'CUT';
+
+  @override
+  String get pasteButtonLabel => 'PASTE';
+
+  @override
+  String get selectAllButtonLabel => 'SELECT ALL';
 
   @override
   String get viewLicensesButtonLabel => 'VIEW LICENCES';
@@ -3333,6 +4251,24 @@ class MaterialLocalizationEnCa extends MaterialLocalizationEn {
   String get licensesPageTitle => 'Licences';
 
   @override
+  String get licensesPackageDetailTextOne => '1 licence';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licences';
+
+  @override
+  String get copyButtonLabel => 'COPY';
+
+  @override
+  String get cutButtonLabel => 'CUT';
+
+  @override
+  String get pasteButtonLabel => 'PASTE';
+
+  @override
+  String get selectAllButtonLabel => 'SELECT ALL';
+
+  @override
   String get viewLicensesButtonLabel => 'VIEW LICENCES';
 
   @override
@@ -3381,10 +4317,28 @@ class MaterialLocalizationEnGb extends MaterialLocalizationEn {
   TimeOfDayFormat get timeOfDayFormatRaw => TimeOfDayFormat.HH_colon_mm;
 
   @override
+  String get copyButtonLabel => 'COPY';
+
+  @override
+  String get selectAllButtonLabel => 'SELECT ALL';
+
+  @override
   String get viewLicensesButtonLabel => 'VIEW LICENCES';
 
   @override
   String get licensesPageTitle => 'Licences';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 licence';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licences';
+
+  @override
+  String get pasteButtonLabel => 'PASTE';
+
+  @override
+  String get cutButtonLabel => 'CUT';
 
   @override
   String get popupMenuLabel => 'Pop-up menu';
@@ -3432,10 +4386,28 @@ class MaterialLocalizationEnIe extends MaterialLocalizationEn {
   TimeOfDayFormat get timeOfDayFormatRaw => TimeOfDayFormat.HH_colon_mm;
 
   @override
+  String get copyButtonLabel => 'COPY';
+
+  @override
+  String get selectAllButtonLabel => 'SELECT ALL';
+
+  @override
   String get viewLicensesButtonLabel => 'VIEW LICENCES';
 
   @override
   String get licensesPageTitle => 'Licences';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 licence';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licences';
+
+  @override
+  String get pasteButtonLabel => 'PASTE';
+
+  @override
+  String get cutButtonLabel => 'CUT';
 
   @override
   String get popupMenuLabel => 'Pop-up menu';
@@ -3481,6 +4453,24 @@ class MaterialLocalizationEnIn extends MaterialLocalizationEn {
 
   @override
   String get licensesPageTitle => 'Licences';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 licence';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licences';
+
+  @override
+  String get copyButtonLabel => 'COPY';
+
+  @override
+  String get cutButtonLabel => 'CUT';
+
+  @override
+  String get pasteButtonLabel => 'PASTE';
+
+  @override
+  String get selectAllButtonLabel => 'SELECT ALL';
 
   @override
   String get viewLicensesButtonLabel => 'VIEW LICENCES';
@@ -3531,6 +4521,24 @@ class MaterialLocalizationEnNz extends MaterialLocalizationEn {
   String get licensesPageTitle => 'Licences';
 
   @override
+  String get licensesPackageDetailTextOne => '1 licence';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licences';
+
+  @override
+  String get copyButtonLabel => 'COPY';
+
+  @override
+  String get cutButtonLabel => 'CUT';
+
+  @override
+  String get pasteButtonLabel => 'PASTE';
+
+  @override
+  String get selectAllButtonLabel => 'SELECT ALL';
+
+  @override
   String get viewLicensesButtonLabel => 'VIEW LICENCES';
 
   @override
@@ -3577,6 +4585,24 @@ class MaterialLocalizationEnSg extends MaterialLocalizationEn {
 
   @override
   String get licensesPageTitle => 'Licences';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 licence';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licences';
+
+  @override
+  String get copyButtonLabel => 'COPY';
+
+  @override
+  String get cutButtonLabel => 'CUT';
+
+  @override
+  String get pasteButtonLabel => 'PASTE';
+
+  @override
+  String get selectAllButtonLabel => 'SELECT ALL';
 
   @override
   String get viewLicensesButtonLabel => 'VIEW LICENCES';
@@ -3627,10 +4653,28 @@ class MaterialLocalizationEnZa extends MaterialLocalizationEn {
   TimeOfDayFormat get timeOfDayFormatRaw => TimeOfDayFormat.HH_colon_mm;
 
   @override
+  String get copyButtonLabel => 'COPY';
+
+  @override
+  String get selectAllButtonLabel => 'SELECT ALL';
+
+  @override
   String get viewLicensesButtonLabel => 'VIEW LICENCES';
 
   @override
   String get licensesPageTitle => 'Licences';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 licence';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licences';
+
+  @override
+  String get pasteButtonLabel => 'PASTE';
+
+  @override
+  String get cutButtonLabel => 'CUT';
 
   @override
   String get popupMenuLabel => 'Pop-up menu';
@@ -3687,6 +4731,9 @@ class MaterialLocalizationEs extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Atrás';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'CANCELAR';
 
   @override
@@ -3708,6 +4755,36 @@ class MaterialLocalizationEs extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'CORTAR';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Eliminar';
 
   @override
@@ -3721,6 +4798,21 @@ class MaterialLocalizationEs extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Ocultar cuentas';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licencias';
@@ -3807,6 +4899,9 @@ class MaterialLocalizationEs extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Filas por página:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -3814,6 +4909,9 @@ class MaterialLocalizationEs extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'SELECCIONAR TODOS';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -3853,6 +4951,12 @@ class MaterialLocalizationEs extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Seleccionar minutos';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'VER LICENCIAS';
@@ -5583,6 +6687,9 @@ class MaterialLocalizationEt extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Tagasi';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'TÜHISTA';
 
   @override
@@ -5604,6 +6711,36 @@ class MaterialLocalizationEt extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'LÕIKA';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Kustuta';
 
   @override
@@ -5617,6 +6754,21 @@ class MaterialLocalizationEt extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Peida kontod';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Litsentsid';
@@ -5703,6 +6855,9 @@ class MaterialLocalizationEt extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Ridu lehe kohta:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -5710,6 +6865,9 @@ class MaterialLocalizationEt extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'VALI KÕIK';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -5749,6 +6907,12 @@ class MaterialLocalizationEt extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Minutite valimine';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'KUVA LITSENTSID';
@@ -5796,6 +6960,9 @@ class MaterialLocalizationEu extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Atzera';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'UTZI';
 
   @override
@@ -5817,6 +6984,36 @@ class MaterialLocalizationEu extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'EBAKI';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Ezabatu';
 
   @override
@@ -5830,6 +7027,21 @@ class MaterialLocalizationEu extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Ezkutatu kontuak';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Lizentziak';
@@ -5916,6 +7128,9 @@ class MaterialLocalizationEu extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Errenkadak orriko:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -5923,6 +7138,9 @@ class MaterialLocalizationEu extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'HAUTATU GUZTIAK';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -5962,6 +7180,12 @@ class MaterialLocalizationEu extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Hautatu minutuak';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'IKUSI LIZENTZIAK';
@@ -6009,6 +7233,9 @@ class MaterialLocalizationFa extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'برگشت';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'لغو';
 
   @override
@@ -6030,6 +7257,36 @@ class MaterialLocalizationFa extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'برش';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'حذف';
 
   @override
@@ -6043,6 +7300,21 @@ class MaterialLocalizationFa extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'پنهان کردن حساب‌ها';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'مجوزها';
@@ -6129,6 +7401,9 @@ class MaterialLocalizationFa extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'ردیف در هر صفحه:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.tall;
 
   @override
@@ -6136,6 +7411,9 @@ class MaterialLocalizationFa extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'انتخاب همه';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -6175,6 +7453,12 @@ class MaterialLocalizationFa extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'انتخاب دقیقه';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'مشاهده مجوزها';
@@ -6222,6 +7506,9 @@ class MaterialLocalizationFi extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Takaisin';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'PERUUTA';
 
   @override
@@ -6243,6 +7530,36 @@ class MaterialLocalizationFi extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'LEIKKAA';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Poista';
 
   @override
@@ -6256,6 +7573,21 @@ class MaterialLocalizationFi extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Piilota tilit';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Lisenssit';
@@ -6342,6 +7674,9 @@ class MaterialLocalizationFi extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Riviä/sivu:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -6349,6 +7684,9 @@ class MaterialLocalizationFi extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'VALITSE KAIKKI';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -6388,6 +7726,12 @@ class MaterialLocalizationFi extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Valitse minuutit';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'NÄYTÄ KÄYTTÖOIKEUDET';
@@ -6435,6 +7779,9 @@ class MaterialLocalizationFil extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Bumalik';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'KANSELAHIN';
 
   @override
@@ -6456,6 +7803,36 @@ class MaterialLocalizationFil extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'I-CUT';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'I-delete';
 
   @override
@@ -6469,6 +7846,21 @@ class MaterialLocalizationFil extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Itago ang mga account';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Mga Lisensya';
@@ -6555,6 +7947,9 @@ class MaterialLocalizationFil extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Mga row bawat page:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -6562,6 +7957,9 @@ class MaterialLocalizationFil extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'PILIIN LAHAT';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -6601,6 +7999,12 @@ class MaterialLocalizationFil extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Pumili ng mga minuto';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'TINGNAN ANG MGA LISENSYA';
@@ -6648,6 +8052,9 @@ class MaterialLocalizationFr extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Retour';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ANNULER';
 
   @override
@@ -6669,6 +8076,36 @@ class MaterialLocalizationFr extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'COUPER';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Supprimer';
 
   @override
@@ -6682,6 +8119,21 @@ class MaterialLocalizationFr extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Masquer les comptes';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licences';
@@ -6768,6 +8220,9 @@ class MaterialLocalizationFr extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Lignes par page :';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -6775,6 +8230,9 @@ class MaterialLocalizationFr extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'TOUT SÉLECTIONNER';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -6814,6 +8272,12 @@ class MaterialLocalizationFr extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Sélectionner des minutes';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'AFFICHER LES LICENCES';
@@ -6921,6 +8385,9 @@ class MaterialLocalizationGl extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Atrás';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'CANCELAR';
 
   @override
@@ -6942,6 +8409,36 @@ class MaterialLocalizationGl extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'CORTAR';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Eliminar';
 
   @override
@@ -6955,6 +8452,21 @@ class MaterialLocalizationGl extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Ocultar contas';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licenzas';
@@ -7041,6 +8553,9 @@ class MaterialLocalizationGl extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Filas por páxina:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -7048,6 +8563,9 @@ class MaterialLocalizationGl extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'SELECCIONAR TODO';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -7087,6 +8605,12 @@ class MaterialLocalizationGl extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Seleccionar minutos';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'VER LICENZAS';
@@ -7134,6 +8658,9 @@ class MaterialLocalizationGsw extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Zurück';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ABBRECHEN';
 
   @override
@@ -7155,6 +8682,36 @@ class MaterialLocalizationGsw extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'AUSSCHNEIDEN';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Löschen';
 
   @override
@@ -7168,6 +8725,21 @@ class MaterialLocalizationGsw extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Konten ausblenden';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Lizenzen';
@@ -7254,6 +8826,9 @@ class MaterialLocalizationGsw extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Zeilen pro Seite:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -7261,6 +8836,9 @@ class MaterialLocalizationGsw extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ALLE AUSWÄHLEN';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -7300,6 +8878,12 @@ class MaterialLocalizationGsw extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Minuten auswählen';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'LIZENZEN ANZEIGEN';
@@ -7347,6 +8931,9 @@ class MaterialLocalizationGu extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'પાછળ';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'રદ કરો';
 
   @override
@@ -7368,6 +8955,36 @@ class MaterialLocalizationGu extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'કાપો';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'ડિલીટ કરો';
 
   @override
@@ -7381,6 +8998,21 @@ class MaterialLocalizationGu extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'એકાઉન્ટ છુપાવો';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'લાઇસન્સ';
@@ -7467,6 +9099,9 @@ class MaterialLocalizationGu extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'પેજ દીઠ પંક્તિઓ:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.tall;
 
   @override
@@ -7474,6 +9109,9 @@ class MaterialLocalizationGu extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'બધા પસંદ કરો';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -7513,6 +9151,12 @@ class MaterialLocalizationGu extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'મિનિટ પસંદ કરો';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'લાઇસન્સ જુઓ';
@@ -7560,6 +9204,9 @@ class MaterialLocalizationHe extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'הקודם';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ביטול';
 
   @override
@@ -7581,6 +9228,36 @@ class MaterialLocalizationHe extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'גזירה';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'מחיקה';
 
   @override
@@ -7594,6 +9271,21 @@ class MaterialLocalizationHe extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'הסתרת החשבונות';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'רישיונות';
@@ -7680,6 +9372,9 @@ class MaterialLocalizationHe extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'שורות בכל דף:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -7687,6 +9382,9 @@ class MaterialLocalizationHe extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'בחירת הכול';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -7726,6 +9424,12 @@ class MaterialLocalizationHe extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'בחירת דקות';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'הצגת הרישיונות';
@@ -7773,6 +9477,9 @@ class MaterialLocalizationHi extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'वापस जाएं';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'रद्द करें';
 
   @override
@@ -7794,6 +9501,36 @@ class MaterialLocalizationHi extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'कट करें';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'मिटाएं';
 
   @override
@@ -7807,6 +9544,21 @@ class MaterialLocalizationHi extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'खाते छिपाएं';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'लाइसेंस';
@@ -7893,6 +9645,9 @@ class MaterialLocalizationHi extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'हर पेज में पंक्तियों की संख्या:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.dense;
 
   @override
@@ -7900,6 +9655,9 @@ class MaterialLocalizationHi extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'सभी चुनें';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -7939,6 +9697,12 @@ class MaterialLocalizationHi extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'मिनट के हिसाब से समय चुनें';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'लाइसेंस देखें';
@@ -7986,6 +9750,9 @@ class MaterialLocalizationHr extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Natrag';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ODUSTANI';
 
   @override
@@ -8007,6 +9774,36 @@ class MaterialLocalizationHr extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'IZREŽI';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Brisanje';
 
   @override
@@ -8020,6 +9817,21 @@ class MaterialLocalizationHr extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Sakrijte račune';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licence';
@@ -8106,6 +9918,9 @@ class MaterialLocalizationHr extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Redaka po stranici:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -8113,6 +9928,9 @@ class MaterialLocalizationHr extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ODABERI SVE';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => 'Odabrane su \$selectedRowCount stavke';
@@ -8152,6 +9970,12 @@ class MaterialLocalizationHr extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Odaberite minute';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'PRIKAŽI LICENCE';
@@ -8199,6 +10023,9 @@ class MaterialLocalizationHu extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Vissza';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'MÉGSE';
 
   @override
@@ -8220,6 +10047,36 @@ class MaterialLocalizationHu extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'KIVÁGÁS';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Törlés';
 
   @override
@@ -8233,6 +10090,21 @@ class MaterialLocalizationHu extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Fiókok elrejtése';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licencek';
@@ -8319,6 +10191,9 @@ class MaterialLocalizationHu extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Oldalankénti sorszám:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -8326,6 +10201,9 @@ class MaterialLocalizationHu extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'AZ ÖSSZES KIJELÖLÉSE';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -8365,6 +10243,12 @@ class MaterialLocalizationHu extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Perc kiválasztása';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'LICENCEK MEGTEKINTÉSE';
@@ -8412,6 +10296,9 @@ class MaterialLocalizationHy extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Հետ';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ՉԵՂԱՐԿԵԼ';
 
   @override
@@ -8433,6 +10320,36 @@ class MaterialLocalizationHy extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ԿՏՐԵԼ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Ջնջել';
 
   @override
@@ -8446,6 +10363,21 @@ class MaterialLocalizationHy extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Թաքցնել հաշիվները';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Արտոնագրեր';
@@ -8532,6 +10464,9 @@ class MaterialLocalizationHy extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Մեկ էջի տողերը՝';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -8539,6 +10474,9 @@ class MaterialLocalizationHy extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ՆՇԵԼ ԲՈԼՈՐԸ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => 'Ընտրված է \$selectedRowCount օբյեկտ';
@@ -8578,6 +10516,12 @@ class MaterialLocalizationHy extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Ընտրեք րոպեները';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ԴԻՏԵԼ ԱՐՏՈՆԱԳՐԵՐԸ';
@@ -8625,6 +10569,9 @@ class MaterialLocalizationId extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Kembali';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'BATAL';
 
   @override
@@ -8646,6 +10593,36 @@ class MaterialLocalizationId extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'POTONG';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Hapus';
 
   @override
@@ -8659,6 +10636,21 @@ class MaterialLocalizationId extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Sembunyikan akun';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Lisensi';
@@ -8745,6 +10737,9 @@ class MaterialLocalizationId extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Baris per halaman:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -8752,6 +10747,9 @@ class MaterialLocalizationId extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'PILIH SEMUA';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -8791,6 +10789,12 @@ class MaterialLocalizationId extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Pilih menit';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'LIHAT LISENSI';
@@ -8838,6 +10842,9 @@ class MaterialLocalizationIs extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Til baka';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'HÆTTA';
 
   @override
@@ -8859,6 +10866,36 @@ class MaterialLocalizationIs extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'KLIPPA';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Eyða';
 
   @override
@@ -8872,6 +10909,21 @@ class MaterialLocalizationIs extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Fela reikninga';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Leyfi';
@@ -8958,6 +11010,9 @@ class MaterialLocalizationIs extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Línur á síðu:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -8965,6 +11020,9 @@ class MaterialLocalizationIs extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'VELJA ALLT';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -9004,6 +11062,12 @@ class MaterialLocalizationIs extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Velja mínútur';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'SKOÐA LEYFI';
@@ -9051,6 +11115,9 @@ class MaterialLocalizationIt extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Indietro';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ANNULLA';
 
   @override
@@ -9072,6 +11139,36 @@ class MaterialLocalizationIt extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'TAGLIA';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Elimina';
 
   @override
@@ -9085,6 +11182,21 @@ class MaterialLocalizationIt extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Nascondi account';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licenze';
@@ -9171,6 +11283,9 @@ class MaterialLocalizationIt extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Righe per pagina:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -9178,6 +11293,9 @@ class MaterialLocalizationIt extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'SELEZIONA TUTTO';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -9217,6 +11335,12 @@ class MaterialLocalizationIt extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Seleziona i minuti';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'VISUALIZZA LICENZE';
@@ -9264,6 +11388,9 @@ class MaterialLocalizationJa extends GlobalMaterialLocalizations {
   String get backButtonTooltip => '戻る';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'キャンセル';
 
   @override
@@ -9285,6 +11412,36 @@ class MaterialLocalizationJa extends GlobalMaterialLocalizations {
   String get cutButtonLabel => '切り取り';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => '削除';
 
   @override
@@ -9298,6 +11455,21 @@ class MaterialLocalizationJa extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'アカウントを非表示';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'ライセンス';
@@ -9384,6 +11556,9 @@ class MaterialLocalizationJa extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'ページあたりの行数:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.dense;
 
   @override
@@ -9391,6 +11566,9 @@ class MaterialLocalizationJa extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'すべて選択';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -9430,6 +11608,12 @@ class MaterialLocalizationJa extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => '分を選択';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ライセンスを表示';
@@ -9477,6 +11661,9 @@ class MaterialLocalizationKa extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'უკან';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'გაუქმება';
 
   @override
@@ -9498,6 +11685,36 @@ class MaterialLocalizationKa extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ამოჭრა';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'წაშლა';
 
   @override
@@ -9511,6 +11728,21 @@ class MaterialLocalizationKa extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'ანგარიშების დამალვა';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'ლიცენზიები';
@@ -9597,6 +11829,9 @@ class MaterialLocalizationKa extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'მწკრივი გვერდზე:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -9604,6 +11839,9 @@ class MaterialLocalizationKa extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ყველას არჩევა';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -9643,6 +11881,12 @@ class MaterialLocalizationKa extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'აირჩიეთ წუთები';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ლიცენზიების ნახვა';
@@ -9690,6 +11934,9 @@ class MaterialLocalizationKk extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Артқа';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'БАС ТАРТУ';
 
   @override
@@ -9711,6 +11958,36 @@ class MaterialLocalizationKk extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ҚИЮ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Жою';
 
   @override
@@ -9724,6 +12001,21 @@ class MaterialLocalizationKk extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Есептік жазбаларды жасыру';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Лицензиялар';
@@ -9810,6 +12102,9 @@ class MaterialLocalizationKk extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Әр беттегі жолдар саны:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -9817,6 +12112,9 @@ class MaterialLocalizationKk extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'БАРЛЫҒЫН ТАҢДАУ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -9856,6 +12154,12 @@ class MaterialLocalizationKk extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Минуттарды таңдаңыз';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ЛИЦЕНЗИЯЛАРДЫ КӨРУ';
@@ -9903,6 +12207,9 @@ class MaterialLocalizationKm extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'ថយក្រោយ';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'បោះបង់';
 
   @override
@@ -9924,6 +12231,36 @@ class MaterialLocalizationKm extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'កាត់';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'លុប';
 
   @override
@@ -9937,6 +12274,21 @@ class MaterialLocalizationKm extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'លាក់គណនី';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'អាជ្ញាបណ្ណ';
@@ -10023,6 +12375,9 @@ class MaterialLocalizationKm extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'ជួរ​ដេក​ក្នុង​មួយ​ទំព័រ៖';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.dense;
 
   @override
@@ -10030,6 +12385,9 @@ class MaterialLocalizationKm extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ជ្រើសរើស​ទាំង​អស់';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -10069,6 +12427,12 @@ class MaterialLocalizationKm extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'ជ្រើសរើស​នាទី';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'មើលអាជ្ញាបណ្ណ';
@@ -10116,6 +12480,9 @@ class MaterialLocalizationKn extends GlobalMaterialLocalizations {
   String get backButtonTooltip => '\u{cb9}\u{cbf}\u{c82}\u{ca4}\u{cbf}\u{cb0}\u{cc1}\u{c97}\u{cbf}';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => '\u{cb0}\u{ca6}\u{ccd}\u{ca6}\u{cc1}\u{cae}\u{cbe}\u{ca1}\u{cbf}';
 
   @override
@@ -10137,6 +12504,36 @@ class MaterialLocalizationKn extends GlobalMaterialLocalizations {
   String get cutButtonLabel => '\u{c95}\u{ca4}\u{ccd}\u{ca4}\u{cb0}\u{cbf}\u{cb8}\u{cbf}';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => '\u{c85}\u{cb3}\u{cbf}\u{cb8}\u{cbf}';
 
   @override
@@ -10150,6 +12547,21 @@ class MaterialLocalizationKn extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => '\u{c96}\u{cbe}\u{ca4}\u{cc6}\u{c97}\u{cb3}\u{ca8}\u{ccd}\u{ca8}\u{cc1}\u{20}\u{cae}\u{cb0}\u{cc6}\u{cae}\u{cbe}\u{ca1}\u{cbf}';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => '\u{caa}\u{cb0}\u{cb5}\u{cbe}\u{ca8}\u{c97}\u{cbf}\u{c97}\u{cb3}\u{cc1}';
@@ -10236,6 +12648,9 @@ class MaterialLocalizationKn extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => '\u{caa}\u{ccd}\u{cb0}\u{ca4}\u{cbf}\u{20}\u{caa}\u{cc1}\u{c9f}\u{c95}\u{ccd}\u{c95}\u{cc6}\u{20}\u{cb8}\u{cbe}\u{cb2}\u{cc1}\u{c97}\u{cb3}\u{cc1}\u{3a}';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.tall;
 
   @override
@@ -10243,6 +12658,9 @@ class MaterialLocalizationKn extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => '\u{c8e}\u{cb2}\u{ccd}\u{cb2}\u{cb5}\u{ca8}\u{ccd}\u{ca8}\u{cc2}\u{20}\u{c86}\u{caf}\u{ccd}\u{c95}\u{cc6}\u{cae}\u{cbe}\u{ca1}\u{cbf}';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -10282,6 +12700,12 @@ class MaterialLocalizationKn extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => '\u{ca8}\u{cbf}\u{cae}\u{cbf}\u{cb7}\u{c97}\u{cb3}\u{ca8}\u{ccd}\u{ca8}\u{cc1}\u{20}\u{c86}\u{caf}\u{ccd}\u{c95}\u{cc6}\u{cae}\u{cbe}\u{ca1}\u{cbf}';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => '\u{caa}\u{cb0}\u{cb5}\u{cbe}\u{ca8}\u{c97}\u{cbf}\u{c97}\u{cb3}\u{ca8}\u{ccd}\u{ca8}\u{cc1}\u{20}\u{cb5}\u{cbf}\u{cd5}\u{c95}\u{ccd}\u{cb7}\u{cbf}\u{cb8}\u{cbf}';
@@ -10329,6 +12753,9 @@ class MaterialLocalizationKo extends GlobalMaterialLocalizations {
   String get backButtonTooltip => '뒤로';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => '취소';
 
   @override
@@ -10350,6 +12777,36 @@ class MaterialLocalizationKo extends GlobalMaterialLocalizations {
   String get cutButtonLabel => '잘라내기';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => '삭제';
 
   @override
@@ -10363,6 +12820,21 @@ class MaterialLocalizationKo extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => '계정 숨기기';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => '라이선스';
@@ -10449,6 +12921,9 @@ class MaterialLocalizationKo extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => '페이지당 행 수:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.dense;
 
   @override
@@ -10456,6 +12931,9 @@ class MaterialLocalizationKo extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => '전체 선택';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -10495,6 +12973,12 @@ class MaterialLocalizationKo extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => '분 선택';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => '라이선스 보기';
@@ -10542,6 +13026,9 @@ class MaterialLocalizationKy extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Артка';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ЖОККО ЧЫГАРУУ';
 
   @override
@@ -10563,6 +13050,36 @@ class MaterialLocalizationKy extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'КЕСҮҮ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Жок кылуу';
 
   @override
@@ -10576,6 +13093,21 @@ class MaterialLocalizationKy extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Аккаунттарды жашыруу';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Уруксаттамалар';
@@ -10662,6 +13194,9 @@ class MaterialLocalizationKy extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Бир бетте көрсөтүлүүчү саптардын саны:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -10669,6 +13204,9 @@ class MaterialLocalizationKy extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'БААРЫН ТАНДОО';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -10708,6 +13246,12 @@ class MaterialLocalizationKy extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Мүнөттөрдү тандаңыз';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'УРУКСАТТАМАЛАРДЫ КӨРҮҮ';
@@ -10755,6 +13299,9 @@ class MaterialLocalizationLo extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'ກັບຄືນ';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ຍົກເລີກ';
 
   @override
@@ -10776,6 +13323,36 @@ class MaterialLocalizationLo extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ຕັດ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'ລຶບ';
 
   @override
@@ -10789,6 +13366,21 @@ class MaterialLocalizationLo extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'ເຊື່ອງບັນຊີ';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'ໃບອະນຸຍາດ';
@@ -10875,6 +13467,9 @@ class MaterialLocalizationLo extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'ແຖວຕໍ່ໜ້າ:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.tall;
 
   @override
@@ -10882,6 +13477,9 @@ class MaterialLocalizationLo extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ເລືອກທັງໝົດ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -10921,6 +13519,12 @@ class MaterialLocalizationLo extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'ເລືອກນາທີ';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ເບິ່ງໃບອະນຸຍາດ';
@@ -10968,6 +13572,9 @@ class MaterialLocalizationLt extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Atgal';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ATŠAUKTI';
 
   @override
@@ -10989,6 +13596,36 @@ class MaterialLocalizationLt extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'IŠKIRPTI';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Ištrinti';
 
   @override
@@ -11002,6 +13639,21 @@ class MaterialLocalizationLt extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Slėpti paskyras';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licencijos';
@@ -11088,6 +13740,9 @@ class MaterialLocalizationLt extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Eilučių puslapyje:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -11095,6 +13750,9 @@ class MaterialLocalizationLt extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'PASIRINKTI VISKĄ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => 'Pasirinkti \$selectedRowCount elementai';
@@ -11134,6 +13792,12 @@ class MaterialLocalizationLt extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Pasirinkite minutes';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'PERŽIŪRĖTI LICENCIJAS';
@@ -11181,6 +13845,9 @@ class MaterialLocalizationLv extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Atpakaļ';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ATCELT';
 
   @override
@@ -11202,6 +13869,36 @@ class MaterialLocalizationLv extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'IZGRIEZT';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Dzēst';
 
   @override
@@ -11215,6 +13912,21 @@ class MaterialLocalizationLv extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Slēpt kontus';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licences';
@@ -11301,6 +14013,9 @@ class MaterialLocalizationLv extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Rindas lapā:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -11308,6 +14023,9 @@ class MaterialLocalizationLv extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ATLASĪT VISU';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -11347,6 +14065,12 @@ class MaterialLocalizationLv extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Atlasiet minūtes';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'SKATĪT LICENCES';
@@ -11394,6 +14118,9 @@ class MaterialLocalizationMk extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Назад';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ОТКАЖИ';
 
   @override
@@ -11415,6 +14142,36 @@ class MaterialLocalizationMk extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ИСЕЧИ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Избриши';
 
   @override
@@ -11428,6 +14185,21 @@ class MaterialLocalizationMk extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Сокриј сметки';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Лиценци';
@@ -11514,6 +14286,9 @@ class MaterialLocalizationMk extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Редови на страница:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -11521,6 +14296,9 @@ class MaterialLocalizationMk extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ИЗБЕРИ ГИ СИТЕ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -11560,6 +14338,12 @@ class MaterialLocalizationMk extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Изберете минути';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ПРИКАЖИ ЛИЦЕНЦИ';
@@ -11607,6 +14391,9 @@ class MaterialLocalizationMl extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'മടങ്ങുക';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'റദ്ദാക്കുക';
 
   @override
@@ -11628,6 +14415,36 @@ class MaterialLocalizationMl extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'മുറിക്കുക';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'ഇല്ലാതാക്കുക';
 
   @override
@@ -11641,6 +14458,21 @@ class MaterialLocalizationMl extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'അക്കൗണ്ടുകൾ മറയ്‌ക്കുക';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'ലൈസൻസുകൾ';
@@ -11727,6 +14559,9 @@ class MaterialLocalizationMl extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'ഓരോ പേജിലുമുള്ള വരികൾ:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.tall;
 
   @override
@@ -11734,6 +14569,9 @@ class MaterialLocalizationMl extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'എല്ലാം തിരഞ്ഞെടുക്കുക';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -11773,6 +14611,12 @@ class MaterialLocalizationMl extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'മിനിറ്റ് തിരഞ്ഞെടുക്കുക';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ലൈസൻസുകൾ കാണുക';
@@ -11820,6 +14664,9 @@ class MaterialLocalizationMn extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Буцах';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'БОЛИХ';
 
   @override
@@ -11841,6 +14688,36 @@ class MaterialLocalizationMn extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ТАСЛАХ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Устгах';
 
   @override
@@ -11854,6 +14731,21 @@ class MaterialLocalizationMn extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Бүртгэлүүдийг нуух';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Лиценз';
@@ -11940,6 +14832,9 @@ class MaterialLocalizationMn extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Хуудсан дахь мөрийн тоо:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -11947,6 +14842,9 @@ class MaterialLocalizationMn extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'БҮГДИЙГ СОНГОХ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -11986,6 +14884,12 @@ class MaterialLocalizationMn extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Минут сонгоно уу';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ЛИЦЕНЗИЙГ ХАРАХ';
@@ -12033,6 +14937,9 @@ class MaterialLocalizationMr extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'मागे';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'रद्द करा';
 
   @override
@@ -12054,6 +14961,36 @@ class MaterialLocalizationMr extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'कट करा';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'हटवा';
 
   @override
@@ -12067,6 +15004,21 @@ class MaterialLocalizationMr extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'खाती लपवा';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'परवाने';
@@ -12153,6 +15105,9 @@ class MaterialLocalizationMr extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'प्रति पेज पंक्ती:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.dense;
 
   @override
@@ -12160,6 +15115,9 @@ class MaterialLocalizationMr extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'सर्व निवडा';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -12199,6 +15157,12 @@ class MaterialLocalizationMr extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'मिनिटे निवडा';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'परवाने पाहा';
@@ -12246,6 +15210,9 @@ class MaterialLocalizationMs extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Kembali';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'BATAL';
 
   @override
@@ -12267,6 +15234,36 @@ class MaterialLocalizationMs extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'POTONG';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Padam';
 
   @override
@@ -12280,6 +15277,21 @@ class MaterialLocalizationMs extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Sembunyikan akaun';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Lesen';
@@ -12366,6 +15378,9 @@ class MaterialLocalizationMs extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Baris setiap halaman:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -12373,6 +15388,9 @@ class MaterialLocalizationMs extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'PILIH SEMUA';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -12412,6 +15430,12 @@ class MaterialLocalizationMs extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Pilih minit';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'LIHAT LESEN';
@@ -12459,6 +15483,9 @@ class MaterialLocalizationMy extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'နောက်သို့';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'မလုပ်တော့';
 
   @override
@@ -12480,6 +15507,36 @@ class MaterialLocalizationMy extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ဖြတ်ယူရန်';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'ဖျက်ရန်';
 
   @override
@@ -12493,6 +15550,21 @@ class MaterialLocalizationMy extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'အကောင့်များကို ဝှက်ရန်';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'လိုင်စင်များ';
@@ -12579,6 +15651,9 @@ class MaterialLocalizationMy extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'စာတစ်မျက်နှာပါ လိုင်းအရေအတွက်−';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.tall;
 
   @override
@@ -12586,6 +15661,9 @@ class MaterialLocalizationMy extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'အားလုံး ရွေးရန်';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -12625,6 +15703,12 @@ class MaterialLocalizationMy extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'မိနစ်ကို ရွေးပါ';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'လိုင်စင်များကို ကြည့်ရန်';
@@ -12702,6 +15786,9 @@ class MaterialLocalizationNe extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'पछाडि जानुहोस्';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'रद्द गर्नुहोस्';
 
   @override
@@ -12723,6 +15810,36 @@ class MaterialLocalizationNe extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'काट्नुहोस्';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'मेट्नुहोस्';
 
   @override
@@ -12736,6 +15853,21 @@ class MaterialLocalizationNe extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'खाताहरू लुकाउनुहोस्';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'इजाजतपत्रहरू';
@@ -12822,6 +15954,9 @@ class MaterialLocalizationNe extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'प्रत्येक पृष्ठमा रहेका पङ्क्तिहरूको सङ्ख्या:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.tall;
 
   @override
@@ -12829,6 +15964,9 @@ class MaterialLocalizationNe extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'सबै चयन गर्नुहोस्';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -12868,6 +16006,12 @@ class MaterialLocalizationNe extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'मिनेट चयन गर्नुहोस्';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'इजाजतपत्रहरू हेर्नुहोस्';
@@ -12915,6 +16059,9 @@ class MaterialLocalizationNl extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Terug';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ANNULEREN';
 
   @override
@@ -12936,6 +16083,36 @@ class MaterialLocalizationNl extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'KNIPPEN';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Verwijderen';
 
   @override
@@ -12949,6 +16126,21 @@ class MaterialLocalizationNl extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Accounts verbergen';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licenties';
@@ -13035,6 +16227,9 @@ class MaterialLocalizationNl extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Rijen per pagina:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -13042,6 +16237,9 @@ class MaterialLocalizationNl extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ALLES SELECTEREN';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -13081,6 +16279,12 @@ class MaterialLocalizationNl extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Minuten selecteren';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'LICENTIES BEKIJKEN';
@@ -13128,6 +16332,9 @@ class MaterialLocalizationNo extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Tilbake';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'AVBRYT';
 
   @override
@@ -13149,6 +16356,36 @@ class MaterialLocalizationNo extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'KLIPP UT';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Slett';
 
   @override
@@ -13162,6 +16399,21 @@ class MaterialLocalizationNo extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Skjul kontoer';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Lisenser';
@@ -13248,6 +16500,9 @@ class MaterialLocalizationNo extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Rader per side:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -13255,6 +16510,9 @@ class MaterialLocalizationNo extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'VELG ALLE';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -13294,6 +16552,12 @@ class MaterialLocalizationNo extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Angi minutter';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'SE LISENSER';
@@ -13341,6 +16605,9 @@ class MaterialLocalizationOr extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'ପଛକୁ ଫେରନ୍ତୁ';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ବାତିଲ୍ କରନ୍ତୁ';
 
   @override
@@ -13362,6 +16629,36 @@ class MaterialLocalizationOr extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'କଟ୍ କରନ୍ତୁ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'ଡିଲିଟ୍ କରନ୍ତୁ';
 
   @override
@@ -13375,6 +16672,21 @@ class MaterialLocalizationOr extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'ଆକାଉଣ୍ଟଗୁଡ଼ିକୁ ଲୁଚାନ୍ତୁ';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'ଲାଇସେନ୍ସଗୁଡ଼କ';
@@ -13461,6 +16773,9 @@ class MaterialLocalizationOr extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'ପୃଷ୍ଠା ପିଛା ଧାଡ଼ି:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.tall;
 
   @override
@@ -13468,6 +16783,9 @@ class MaterialLocalizationOr extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ସମସ୍ତ ଚୟନ କରନ୍ତୁ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -13507,6 +16825,12 @@ class MaterialLocalizationOr extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'ମିନିଟ୍ ଚୟନ କରନ୍ତୁ';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ଲାଇସେନ୍ସ ଦେଖାନ୍ତୁ';
@@ -13554,6 +16878,9 @@ class MaterialLocalizationPa extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'ਪਿੱਛੇ';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ਰੱਦ ਕਰੋ';
 
   @override
@@ -13575,6 +16902,36 @@ class MaterialLocalizationPa extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ਕੱਟ ਕਰੋ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'ਮਿਟਾਓ';
 
   @override
@@ -13588,6 +16945,21 @@ class MaterialLocalizationPa extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'ਖਾਤੇ ਲੁਕਾਓ';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'ਲਾਇਸੰਸ';
@@ -13674,6 +17046,9 @@ class MaterialLocalizationPa extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'ਹਰ ਪੰਨੇ \'ਤੇ ਕਤਾਰਾਂ:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.tall;
 
   @override
@@ -13681,6 +17056,9 @@ class MaterialLocalizationPa extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ਸਭ ਚੁਣੋ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -13720,6 +17098,12 @@ class MaterialLocalizationPa extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'ਮਿੰਟ ਚੁਣੋ';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ਲਾਇਸੰਸ ਦੇਖੋ';
@@ -13767,6 +17151,9 @@ class MaterialLocalizationPl extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Wstecz';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ANULUJ';
 
   @override
@@ -13788,6 +17175,36 @@ class MaterialLocalizationPl extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'WYTNIJ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Usuń';
 
   @override
@@ -13801,6 +17218,21 @@ class MaterialLocalizationPl extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Ukryj konta';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licencje';
@@ -13887,6 +17319,9 @@ class MaterialLocalizationPl extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Wiersze na stronie:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -13894,6 +17329,9 @@ class MaterialLocalizationPl extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ZAZNACZ WSZYSTKO';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => '\$selectedRowCount wybrane elementy';
@@ -13933,6 +17371,12 @@ class MaterialLocalizationPl extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Wybierz minuty';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'WYŚWIETL LICENCJE';
@@ -13980,6 +17424,9 @@ class MaterialLocalizationPs extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'شاته';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'لغوه کول';
 
   @override
@@ -14001,6 +17448,36 @@ class MaterialLocalizationPs extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'کم کړئ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => '';
 
   @override
@@ -14014,6 +17491,21 @@ class MaterialLocalizationPs extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'حسابونه پټ کړئ';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'جوازونه';
@@ -14100,6 +17592,9 @@ class MaterialLocalizationPs extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'د هرې پاڼې پاڼې:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.tall;
 
   @override
@@ -14107,6 +17602,9 @@ class MaterialLocalizationPs extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'غوره کړئ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -14146,6 +17644,12 @@ class MaterialLocalizationPs extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'منې غوره کړئ';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'لیدلس وګورئ';
@@ -14193,6 +17697,9 @@ class MaterialLocalizationPt extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Voltar';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'CANCELAR';
 
   @override
@@ -14214,6 +17721,36 @@ class MaterialLocalizationPt extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'RECORTAR';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Excluir';
 
   @override
@@ -14227,6 +17764,21 @@ class MaterialLocalizationPt extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Ocultar contas';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licenças';
@@ -14313,6 +17865,9 @@ class MaterialLocalizationPt extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Linhas por página:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -14320,6 +17875,9 @@ class MaterialLocalizationPt extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'SELECIONAR TUDO';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -14359,6 +17917,12 @@ class MaterialLocalizationPt extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Selecione os minutos';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'VER LICENÇAS';
@@ -14490,6 +18054,9 @@ class MaterialLocalizationRo extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Înapoi';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ANULAȚI';
 
   @override
@@ -14511,6 +18078,36 @@ class MaterialLocalizationRo extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'DECUPAȚI';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Ștergeți';
 
   @override
@@ -14524,6 +18121,21 @@ class MaterialLocalizationRo extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Ascundeți conturile';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licențe';
@@ -14610,6 +18222,9 @@ class MaterialLocalizationRo extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Rânduri pe pagină:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -14617,6 +18232,9 @@ class MaterialLocalizationRo extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'SELECTAȚI TOATE';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => '\$selectedRowCount articole selectate';
@@ -14656,6 +18274,12 @@ class MaterialLocalizationRo extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Selectați minutele';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'VEDEȚI LICENȚELE';
@@ -14703,6 +18327,9 @@ class MaterialLocalizationRu extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Назад';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ОТМЕНА';
 
   @override
@@ -14724,6 +18351,36 @@ class MaterialLocalizationRu extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ВЫРЕЗАТЬ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Удалить';
 
   @override
@@ -14737,6 +18394,21 @@ class MaterialLocalizationRu extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Скрыть аккаунты';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Лицензии';
@@ -14823,6 +18495,9 @@ class MaterialLocalizationRu extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Строк на странице:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -14830,6 +18505,9 @@ class MaterialLocalizationRu extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ВЫБРАТЬ ВСЕ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => 'Выбрано \$selectedRowCount объекта';
@@ -14869,6 +18547,12 @@ class MaterialLocalizationRu extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Выберите минуты';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ЛИЦЕНЗИИ';
@@ -14916,6 +18600,9 @@ class MaterialLocalizationSi extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'ආපසු';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'අවලංගු කරන්න';
 
   @override
@@ -14937,6 +18624,36 @@ class MaterialLocalizationSi extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'කපන්න';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'මකන්න';
 
   @override
@@ -14950,6 +18667,21 @@ class MaterialLocalizationSi extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'ගිණුම් සඟවන්න';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'බලපත්‍ර';
@@ -15036,6 +18768,9 @@ class MaterialLocalizationSi extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'පිටුවකට පේළි:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -15043,6 +18778,9 @@ class MaterialLocalizationSi extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'සියල්ල තෝරන්න';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -15082,6 +18820,12 @@ class MaterialLocalizationSi extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'මිනිත්තු ගණන තෝරන්න';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'බලපත්‍ර බලන්න';
@@ -15129,6 +18873,9 @@ class MaterialLocalizationSk extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Späť';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ZRUŠIŤ';
 
   @override
@@ -15150,6 +18897,36 @@ class MaterialLocalizationSk extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'VYSTRIHNÚŤ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Odstrániť';
 
   @override
@@ -15163,6 +18940,21 @@ class MaterialLocalizationSk extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Skryť účty';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licencie';
@@ -15249,6 +19041,9 @@ class MaterialLocalizationSk extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Počet riadkov na stránku:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -15256,6 +19051,9 @@ class MaterialLocalizationSk extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'VYBRAŤ VŠETKO';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => '\$selectedRowCount vybraté položky';
@@ -15295,6 +19093,12 @@ class MaterialLocalizationSk extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Vybrať minúty';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ZOBRAZIŤ LICENCIE';
@@ -15342,6 +19146,9 @@ class MaterialLocalizationSl extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Nazaj';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'PREKLIČI';
 
   @override
@@ -15363,6 +19170,36 @@ class MaterialLocalizationSl extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'IZREŽI';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Brisanje';
 
   @override
@@ -15376,6 +19213,21 @@ class MaterialLocalizationSl extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Skrivanje računov';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licence';
@@ -15462,6 +19314,9 @@ class MaterialLocalizationSl extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Vrstice na stran:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -15469,6 +19324,9 @@ class MaterialLocalizationSl extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'IZBERI VSE';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => 'Izbrani so \$selectedRowCount elementi';
@@ -15508,6 +19366,12 @@ class MaterialLocalizationSl extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Izberite minute';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'PRIKAŽI LICENCE';
@@ -15555,6 +19419,9 @@ class MaterialLocalizationSq extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Prapa';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ANULO';
 
   @override
@@ -15576,6 +19443,36 @@ class MaterialLocalizationSq extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'PRIT';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Fshi';
 
   @override
@@ -15589,6 +19486,21 @@ class MaterialLocalizationSq extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Fshih llogaritë';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licencat';
@@ -15675,6 +19587,9 @@ class MaterialLocalizationSq extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Rreshtat për faqe:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -15682,6 +19597,9 @@ class MaterialLocalizationSq extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ZGJIDHI TË GJITHA';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -15721,6 +19639,12 @@ class MaterialLocalizationSq extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Zgjidh minutat';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'SHIKO LICENCAT';
@@ -15768,6 +19692,9 @@ class MaterialLocalizationSr extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Назад';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ОТКАЖИ';
 
   @override
@@ -15789,6 +19716,36 @@ class MaterialLocalizationSr extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ИСЕЦИ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Избришите';
 
   @override
@@ -15802,6 +19759,21 @@ class MaterialLocalizationSr extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Сакриј налоге';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Лиценце';
@@ -15888,6 +19860,9 @@ class MaterialLocalizationSr extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Редова по страници:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -15895,6 +19870,9 @@ class MaterialLocalizationSr extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ИЗАБЕРИ СВЕ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => 'Изабране су \$selectedRowCount ставке';
@@ -15934,6 +19912,12 @@ class MaterialLocalizationSr extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Изаберите минуте';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ПРИКАЖИ ЛИЦЕНЦЕ';
@@ -16200,6 +20184,9 @@ class MaterialLocalizationSv extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Tillbaka';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'AVBRYT';
 
   @override
@@ -16221,6 +20208,36 @@ class MaterialLocalizationSv extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'KLIPP UT';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Radera';
 
   @override
@@ -16234,6 +20251,21 @@ class MaterialLocalizationSv extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Dölj konton';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Licenser';
@@ -16320,6 +20352,9 @@ class MaterialLocalizationSv extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Rader per sida:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -16327,6 +20362,9 @@ class MaterialLocalizationSv extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'MARKERA ALLA';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -16366,6 +20404,12 @@ class MaterialLocalizationSv extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Välj minuter';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'VISA LICENSER';
@@ -16413,6 +20457,9 @@ class MaterialLocalizationSw extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Rudi Nyuma';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'GHAIRI';
 
   @override
@@ -16434,6 +20481,36 @@ class MaterialLocalizationSw extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'KATA';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Futa';
 
   @override
@@ -16447,6 +20524,21 @@ class MaterialLocalizationSw extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Ficha akaunti';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Leseni';
@@ -16533,6 +20625,9 @@ class MaterialLocalizationSw extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Safu mlalo kwa kila ukurasa:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -16540,6 +20635,9 @@ class MaterialLocalizationSw extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'CHAGUA ZOTE';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -16579,6 +20677,12 @@ class MaterialLocalizationSw extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Chagua dakika';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ANGALIA LESENI';
@@ -16626,6 +20730,9 @@ class MaterialLocalizationTa extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'முந்தைய பக்கம்';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ரத்துசெய்';
 
   @override
@@ -16647,6 +20754,36 @@ class MaterialLocalizationTa extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'வெட்டு';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'நீக்கு';
 
   @override
@@ -16660,6 +20797,21 @@ class MaterialLocalizationTa extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'கணக்குகளை மறைக்கும்';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'உரிமங்கள்';
@@ -16746,6 +20898,9 @@ class MaterialLocalizationTa extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'ஒரு பக்கத்திற்கான வரிசைகள்:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.dense;
 
   @override
@@ -16753,6 +20908,9 @@ class MaterialLocalizationTa extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'அனைத்தையும் தேர்ந்தெடு';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -16792,6 +20950,12 @@ class MaterialLocalizationTa extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'நிமிடங்களைத் தேர்ந்தெடுக்கவும்';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'உரிமங்களைக் காட்டு';
@@ -16839,6 +21003,9 @@ class MaterialLocalizationTe extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'వెనుకకు';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'రద్దు చేయి';
 
   @override
@@ -16860,6 +21027,36 @@ class MaterialLocalizationTe extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'కత్తిరించు';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'తొలగించు';
 
   @override
@@ -16873,6 +21070,21 @@ class MaterialLocalizationTe extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'ఖాతాలను దాచు';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'లైసెన్స్‌లు';
@@ -16959,6 +21171,9 @@ class MaterialLocalizationTe extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'పేజీకి ఉండే అడ్డు వరుసలు:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.tall;
 
   @override
@@ -16966,6 +21181,9 @@ class MaterialLocalizationTe extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'అన్నింటినీ ఎంచుకోండి';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -17005,6 +21223,12 @@ class MaterialLocalizationTe extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'నిమిషాలను ఎంచుకోండి';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'లైసెన్స్‌లను చూడండి';
@@ -17052,6 +21276,9 @@ class MaterialLocalizationTh extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'กลับ';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'ยกเลิก';
 
   @override
@@ -17073,6 +21300,36 @@ class MaterialLocalizationTh extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ตัด';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'ลบ';
 
   @override
@@ -17086,6 +21343,21 @@ class MaterialLocalizationTh extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'ซ่อนบัญชี';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'ใบอนุญาต';
@@ -17172,6 +21444,9 @@ class MaterialLocalizationTh extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'แถวต่อหน้า:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.tall;
 
   @override
@@ -17179,6 +21454,9 @@ class MaterialLocalizationTh extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'เลือกทั้งหมด';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -17218,6 +21496,12 @@ class MaterialLocalizationTh extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'เลือกนาที';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ดูใบอนุญาต';
@@ -17265,6 +21549,9 @@ class MaterialLocalizationTl extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Bumalik';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'KANSELAHIN';
 
   @override
@@ -17286,6 +21573,36 @@ class MaterialLocalizationTl extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'I-CUT';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'I-delete';
 
   @override
@@ -17299,6 +21616,21 @@ class MaterialLocalizationTl extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Itago ang mga account';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Mga Lisensya';
@@ -17385,6 +21717,9 @@ class MaterialLocalizationTl extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Mga row bawat page:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -17392,6 +21727,9 @@ class MaterialLocalizationTl extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'PILIIN LAHAT';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -17431,6 +21769,12 @@ class MaterialLocalizationTl extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Pumili ng mga minuto';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'TINGNAN ANG MGA LISENSYA';
@@ -17478,6 +21822,9 @@ class MaterialLocalizationTr extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Geri';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'İPTAL';
 
   @override
@@ -17499,6 +21846,36 @@ class MaterialLocalizationTr extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'KES';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Sil';
 
   @override
@@ -17512,6 +21889,21 @@ class MaterialLocalizationTr extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Hesapları gizle';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Lisanslar';
@@ -17598,6 +21990,9 @@ class MaterialLocalizationTr extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Sayfa başına satır sayısı:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -17605,6 +22000,9 @@ class MaterialLocalizationTr extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'TÜMÜNÜ SEÇ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -17644,6 +22042,12 @@ class MaterialLocalizationTr extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Dakikayı seçin';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'LİSANSLARI GÖSTER';
@@ -17691,6 +22095,9 @@ class MaterialLocalizationUk extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Назад';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'СКАСУВАТИ';
 
   @override
@@ -17712,6 +22119,36 @@ class MaterialLocalizationUk extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'ВИРІЗАТИ';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Видалити';
 
   @override
@@ -17725,6 +22162,21 @@ class MaterialLocalizationUk extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Сховати облікові записи';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Ліцензії';
@@ -17811,6 +22263,9 @@ class MaterialLocalizationUk extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Рядків на сторінці:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -17818,6 +22273,9 @@ class MaterialLocalizationUk extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'ВИБРАТИ ВСІ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => 'Вибрано \$selectedRowCount елементи';
@@ -17857,6 +22315,12 @@ class MaterialLocalizationUk extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Виберіть хвилини';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'ПЕРЕГЛЯНУТИ ЛІЦЕНЗІЇ';
@@ -17904,6 +22368,9 @@ class MaterialLocalizationUr extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'پیچھے';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'منسوخ کریں';
 
   @override
@@ -17925,6 +22392,36 @@ class MaterialLocalizationUr extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'کٹ کریں';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'حذف کریں';
 
   @override
@@ -17938,6 +22435,21 @@ class MaterialLocalizationUr extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'اکاؤنٹس چھپائیں';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'لائسنسز';
@@ -18024,6 +22536,9 @@ class MaterialLocalizationUr extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'قطاریں فی صفحہ:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.tall;
 
   @override
@@ -18031,6 +22546,9 @@ class MaterialLocalizationUr extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'سبھی منتخب کریں';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -18070,6 +22588,12 @@ class MaterialLocalizationUr extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'منٹ منتخب کریں';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'لائسنسز دیکھیں';
@@ -18117,6 +22641,9 @@ class MaterialLocalizationUz extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Orqaga';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'BEKOR QILISH';
 
   @override
@@ -18138,6 +22665,36 @@ class MaterialLocalizationUz extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'KESIB OLISH';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Olib tashlash';
 
   @override
@@ -18151,6 +22708,21 @@ class MaterialLocalizationUz extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Hisoblarni berkitish';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Litsenziyalar';
@@ -18237,6 +22809,9 @@ class MaterialLocalizationUz extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Har bir sahifadagi qatorlar soni:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -18244,6 +22819,9 @@ class MaterialLocalizationUz extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'BARCHASINI TANLASH';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -18283,6 +22861,12 @@ class MaterialLocalizationUz extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Daqiqani tanlang';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'Litsenziyalarni koʻrish';
@@ -18330,6 +22914,9 @@ class MaterialLocalizationVi extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Quay lại';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'HỦY';
 
   @override
@@ -18351,6 +22938,36 @@ class MaterialLocalizationVi extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'CẮT';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Xóa';
 
   @override
@@ -18364,6 +22981,21 @@ class MaterialLocalizationVi extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Ẩn tài khoản';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Giấy phép';
@@ -18450,6 +23082,9 @@ class MaterialLocalizationVi extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Số hàng mỗi trang:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -18457,6 +23092,9 @@ class MaterialLocalizationVi extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'CHỌN TẤT CẢ';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -18496,6 +23134,12 @@ class MaterialLocalizationVi extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Chọn phút';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'XEM GIẤY PHÉP';
@@ -18543,6 +23187,9 @@ class MaterialLocalizationZh extends GlobalMaterialLocalizations {
   String get backButtonTooltip => '返回';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => '取消';
 
   @override
@@ -18564,6 +23211,36 @@ class MaterialLocalizationZh extends GlobalMaterialLocalizations {
   String get cutButtonLabel => '剪切';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => '删除';
 
   @override
@@ -18577,6 +23254,21 @@ class MaterialLocalizationZh extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => '隐藏帐号';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => '许可';
@@ -18663,6 +23355,9 @@ class MaterialLocalizationZh extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => '每页行数：';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.dense;
 
   @override
@@ -18670,6 +23365,9 @@ class MaterialLocalizationZh extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => '全选';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -18709,6 +23407,12 @@ class MaterialLocalizationZh extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => '选择分钟';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => '查看许可';
@@ -19053,6 +23757,9 @@ class MaterialLocalizationZu extends GlobalMaterialLocalizations {
   String get backButtonTooltip => 'Emuva';
 
   @override
+  String get calendarModeButtonLabel => 'Switch to calendar';
+
+  @override
   String get cancelButtonLabel => 'KHANSELA';
 
   @override
@@ -19074,6 +23781,36 @@ class MaterialLocalizationZu extends GlobalMaterialLocalizations {
   String get cutButtonLabel => 'SIKA';
 
   @override
+  String get dateHelpText => 'mm/dd/yyyy';
+
+  @override
+  String get dateInputLabel => 'Enter Date';
+
+  @override
+  String get dateOutOfRangeLabel => 'Out of range.';
+
+  @override
+  String get datePickerHelpText => 'SELECT DATE';
+
+  @override
+  String get dateRangeEndDateSemanticLabelRaw => 'End date \$fullDate';
+
+  @override
+  String get dateRangeEndLabel => 'End Date';
+
+  @override
+  String get dateRangePickerHelpText => 'SELECT RANGE';
+
+  @override
+  String get dateRangeStartDateSemanticLabelRaw => 'Start date \$fullDate';
+
+  @override
+  String get dateRangeStartLabel => 'Start Date';
+
+  @override
+  String get dateSeparator => '/';
+
+  @override
   String get deleteButtonTooltip => 'Susa';
 
   @override
@@ -19087,6 +23824,21 @@ class MaterialLocalizationZu extends GlobalMaterialLocalizations {
 
   @override
   String get hideAccountsLabel => 'Fihla ama-akhawunti';
+
+  @override
+  String get inputDateModeButtonLabel => 'Switch to input';
+
+  @override
+  String get invalidDateFormatLabel => 'Invalid format.';
+
+  @override
+  String get invalidDateRangeLabel => 'Invalid range.';
+
+  @override
+  String get licensesPackageDetailTextOne => '1 license';
+
+  @override
+  String get licensesPackageDetailTextOther => '\$licenseCount licenses';
 
   @override
   String get licensesPageTitle => 'Amalayisense';
@@ -19173,6 +23925,9 @@ class MaterialLocalizationZu extends GlobalMaterialLocalizations {
   String get rowsPerPageTitle => 'Imigqa ekhasini ngalinye:';
 
   @override
+  String get saveButtonLabel => 'SAVE';
+
+  @override
   ScriptCategory get scriptCategory => ScriptCategory.englishLike;
 
   @override
@@ -19180,6 +23935,9 @@ class MaterialLocalizationZu extends GlobalMaterialLocalizations {
 
   @override
   String get selectAllButtonLabel => 'KHETHA KONKE';
+
+  @override
+  String get selectYearSemanticsLabel => 'Select year';
 
   @override
   String get selectedRowCountTitleFew => null;
@@ -19219,6 +23977,12 @@ class MaterialLocalizationZu extends GlobalMaterialLocalizations {
 
   @override
   String get timePickerMinuteModeAnnouncement => 'Khetha amaminithi';
+
+  @override
+  String get unspecifiedDate => 'Date';
+
+  @override
+  String get unspecifiedDateRange => 'Date Range';
 
   @override
   String get viewLicensesButtonLabel => 'Buka amalayisense';

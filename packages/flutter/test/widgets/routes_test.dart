@@ -2,10 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+// @dart = 2.8
+
 import 'dart:collection';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
@@ -1197,7 +1200,7 @@ void main() {
       expect(modalBarrierAnimation.value, Colors.black);
     });
 
-    testWidgets('focus traverse correct when pop mutiple page simultaneously', (WidgetTester tester) async {
+    testWidgets('focus traverse correct when pop multiple page simultaneously', (WidgetTester tester) async {
       // Regression test: https://github.com/flutter/flutter/issues/48903
       final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
       await tester.pumpWidget(MaterialApp(
@@ -1243,7 +1246,7 @@ void main() {
       expect(focusNodeOnPageOne.hasFocus, isTrue);
     });
 
-    testWidgets('focus traversal is correct when popping mutiple pages simultaneously - with focused children', (WidgetTester tester) async {
+    testWidgets('focus traversal is correct when popping multiple pages simultaneously - with focused children', (WidgetTester tester) async {
       // Regression test: https://github.com/flutter/flutter/issues/48903
       final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
       await tester.pumpWidget(MaterialApp(
@@ -1316,6 +1319,28 @@ void main() {
       await tester.pump();
       expect(tester.takeException(), null);
     });
+  });
+
+  testWidgets('can be dismissed with escape keyboard shortcut', (WidgetTester tester) async {
+    final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+    await tester.pumpWidget(MaterialApp(
+      navigatorKey: navigatorKey,
+      home: const Text('dummy1'),
+    ));
+    final Element textOnPageOne = tester.element(find.text('dummy1'));
+
+    // Show a simple dialog
+    showDialog<void>(
+      context: textOnPageOne,
+      builder: (BuildContext context) => const Text('dialog1'),
+    );
+    await tester.pumpAndSettle();
+    expect(find.text('dialog1'), findsOneWidget);
+
+    // Try to dismiss the dialog with the shortcut key
+    await tester.sendKeyEvent(LogicalKeyboardKey.escape);
+    await tester.pumpAndSettle();
+    expect(find.text('dialog1'), findsNothing);
   });
 }
 

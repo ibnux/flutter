@@ -2,6 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+// @dart = 2.8
+
 import 'dart:ui' show Offset, PointerDeviceKind;
 
 import 'package:flutter/foundation.dart';
@@ -30,7 +32,7 @@ const int kPrimaryButton = 0x01;
 /// It is equivalent to:
 ///
 ///  * [kPrimaryStylusButton]: The stylus contacts the screen.
-///  * [kSecondaryMouseButton]: The primary mouse button.
+///  * [kSecondaryMouseButton]: The secondary mouse button.
 ///
 /// See also:
 ///

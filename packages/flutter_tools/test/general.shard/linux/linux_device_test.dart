@@ -4,15 +4,14 @@
 
 import 'package:file/memory.dart';
 import 'package:flutter_tools/src/base/file_system.dart';
+import 'package:flutter_tools/src/base/platform.dart';
 import 'package:flutter_tools/src/build_info.dart';
+import 'package:flutter_tools/src/device.dart';
+import 'package:flutter_tools/src/globals.dart' as globals;
 import 'package:flutter_tools/src/linux/application_package.dart';
 import 'package:flutter_tools/src/linux/linux_device.dart';
-import 'package:flutter_tools/src/device.dart';
 import 'package:flutter_tools/src/project.dart';
-import 'package:flutter_tools/src/globals.dart' as globals;
-
 import 'package:mockito/mockito.dart';
-import 'package:platform/platform.dart';
 
 import '../../src/common.dart';
 import '../../src/context.dart';
@@ -29,13 +28,18 @@ void main() {
   testWithoutContext('LinuxDevice defaults', () async {
     final PrebuiltLinuxApp linuxApp = PrebuiltLinuxApp(executable: 'foo');
     expect(await device.targetPlatform, TargetPlatform.linux_x64);
-    expect(device.name, 'Linux');
+    expect(device.name, 'Linux desktop');
     expect(await device.installApp(linuxApp), true);
     expect(await device.uninstallApp(linuxApp), true);
     expect(await device.isLatestBuildInstalled(linuxApp), true);
     expect(await device.isAppInstalled(linuxApp), true);
     expect(await device.stopApp(linuxApp), true);
     expect(device.category, Category.desktop);
+
+    expect(device.supportsRuntimeMode(BuildMode.debug), true);
+    expect(device.supportsRuntimeMode(BuildMode.profile), true);
+    expect(device.supportsRuntimeMode(BuildMode.release), true);
+    expect(device.supportsRuntimeMode(BuildMode.jitRelease), false);
   });
 
   testWithoutContext('LinuxDevice: no devices listed if platform unsupported', () async {

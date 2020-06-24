@@ -108,6 +108,16 @@ class Template {
         }
         relativeDestinationPath = relativeDestinationPath.replaceAll('$platform-$language.tmpl', platform);
       }
+
+      final bool android = context['android'] as bool;
+      if (relativeDestinationPath.contains('android') && !android) {
+        return null;
+      }
+
+      // TODO(cyanglaz): do not add iOS folder by default when 1.20.0 is released.
+      // Also need to update the flutter SDK min constraint in the pubspec.yaml to 1.20.0.
+      // https://github.com/flutter/flutter/issues/59787
+
       // Only build a web project if explicitly asked.
       final bool web = context['web'] as bool;
       if (relativeDestinationPath.contains('web') && !web) {
@@ -128,6 +138,7 @@ class Template {
       if (relativeDestinationPath.startsWith('windows.tmpl') && !windows) {
         return null;
       }
+
       final String projectName = context['projectName'] as String;
       final String androidIdentifier = context['androidIdentifier'] as String;
       final String pluginClass = context['pluginClass'] as String;
@@ -139,7 +150,7 @@ class Template {
         .replaceAll(imageTemplateExtension, '')
         .replaceAll(templateExtension, '');
 
-      if (androidIdentifier != null) {
+      if (android != null && android && androidIdentifier != null) {
         finalDestinationPath = finalDestinationPath
             .replaceAll('androidIdentifier', androidIdentifier.replaceAll('.', pathSeparator));
       }
@@ -249,14 +260,19 @@ Future<Directory> _templateImageDirectory(String name, FileSystem fileSystem) as
   if (!fileSystem.file(packageFilePath).existsSync()) {
     await _ensurePackageDependencies(toolPackagePath);
   }
-  final PackageConfig packageConfig = await loadPackageConfigOrFail(
+  PackageConfig packageConfig = await loadPackageConfigWithLogging(
     fileSystem.file(packageFilePath),
     logger: globals.logger,
   );
-  final Uri imagePackageLibDir = packageConfig['flutter_template_images']?.packageUriRoot;
+  Uri imagePackageLibDir = packageConfig['flutter_template_images']?.packageUriRoot;
   // Ensure that the template image package is present.
   if (imagePackageLibDir == null || !fileSystem.directory(imagePackageLibDir).existsSync()) {
     await _ensurePackageDependencies(toolPackagePath);
+    packageConfig = await loadPackageConfigWithLogging(
+      fileSystem.file(packageFilePath),
+      logger: globals.logger,
+    );
+    imagePackageLibDir = packageConfig['flutter_template_images']?.packageUriRoot;
   }
   return fileSystem.directory(imagePackageLibDir)
       .parent

@@ -3,8 +3,8 @@
 // found in the LICENSE file.
 
 import 'package:meta/meta.dart';
-import 'package:platform/platform.dart';
 
+import '../base/platform.dart';
 import '../build_info.dart';
 import '../desktop_device.dart';
 import '../device.dart';
@@ -17,7 +17,7 @@ import 'linux_workflow.dart';
 /// A device that represents a desktop Linux target.
 class LinuxDevice extends DesktopDevice {
   LinuxDevice() : super(
-      'Linux',
+      'linux',
       platformType: PlatformType.linux,
       ephemeral: false,
   );
@@ -26,7 +26,7 @@ class LinuxDevice extends DesktopDevice {
   bool isSupported() => true;
 
   @override
-  String get name => 'Linux';
+  String get name => 'Linux desktop';
 
   @override
   Future<TargetPlatform> get targetPlatform async => TargetPlatform.linux_x64;
